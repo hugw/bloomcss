@@ -8,10 +8,18 @@
  * @license MIT
  */
 
-// Variables
-$fa-font-size-base: rem-calc($blm-font-size);
+/*--------------------
+  Fontawesome Settings
+---------------------*/
+
+$fa-font-size-base: rem-calc($fontsize);
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts';
 $fa-css-prefix: 'icon.';
+
+
+/*--------------------
+  Base
+---------------------*/
 
 @import '../vendor/font-awesome/variables';
 @import '../vendor/font-awesome/mixins';
@@ -22,13 +30,21 @@ $fa-css-prefix: 'icon.';
   @include fa-icon();
 }
 
-// Fixed width
+
+/*--------------------
+  Fixed width
+---------------------*/
+
 .icon.-fixed-width {
   width: (18em / 14);
   text-align: center;
 }
 
-// Spin animation
+
+/*--------------------
+  Animation
+---------------------*/
+
 .icon.-spin {
   @include animation(iconSpin 2s linear);
   @include animation-iteration-count(infinite);
@@ -39,15 +55,19 @@ $fa-css-prefix: 'icon.';
   100% { @include transform(rotate(360deg)); }
 }
 
-// Sizes
-.icon.-large {
-  font-size: rem-calc($blm-font-size*1.5);
-}
 
-.icon.-larger {
-  font-size: rem-calc($blm-font-size*2);
+/*--------------------
+  Sizes
+---------------------*/
+
+.icon.-large {
+  font-size: rem-calc($fontsize * 1.5);
 }
 
 .icon.-xlarge {
-  font-size: rem-calc($blm-font-size*2.5);
+  font-size: rem-calc($fontsize * 2);
+}
+
+.icon.-xxlarge {
+  font-size: rem-calc($fontsize * 2.5);
 }
