@@ -31,15 +31,15 @@ body {
 
 ::-webkit-selection {
   background-color: $color-primary !important;
-  color: $color-background !important;
+  color: $white !important;
 }
 
 ::-moz-selection {
   background-color: $color-primary !important;
-  color: $color-background !important;
+  color: $white !important;
 }
 
 ::selection {
   background-color: $color-primary !important;
-  color: $color-background !important;
+  color: $white !important;
 }
