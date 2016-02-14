@@ -16,19 +16,19 @@ $grid-row-width: rem-calc(1200);
 $grid-column-count: 12;
 
 $grid-column-responsive-gutter: (
-  -xsmall: 20px,
-  -small:  20px,
-  -medium: 20px,
-  -large:  20px,
-  -xlarge: 30px
+  -xsmall: $gutter,
+  -small:  $gutter,
+  -medium: $gutter,
+  -large:  $gutter,
+  -xlarge: $gutter-large
 );
 
 $breakpoints: (
   -xsmall: 0,
-  -small:  480px,
-  -medium: 768px,
-  -large:  960px,
-  -xlarge: 1200px
+  -small:  rem-calc(480),
+  -medium: rem-calc(768),
+  -large:  rem-calc(960),
+  -xlarge: rem-calc(1200)
 );
 
 $breakpoint-classes: (-xsmall -small -medium -large -xlarge);
