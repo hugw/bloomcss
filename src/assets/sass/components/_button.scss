@@ -73,6 +73,7 @@ input[type="reset"] {
 ---------------------*/
 
 @include button-color();
+@include button-color('-secondary', $color-secondary);
 @include button-color('-success', $color-success);
 @include button-color('-error', $color-error);
 @include button-color('-magenta', $magenta);
