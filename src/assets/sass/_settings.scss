@@ -1,0 +1,60 @@
+/**
+ * Settings
+ *
+ * @copyright Copyright (c) 2015, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+/*--------------------
+  Colors
+---------------------*/
+
+$white: white !default;
+$black: #444444 !default;
+
+$grey: #DDDDDD !default;
+$grey-light: #EAEAEA !default;
+$grey-xlight: #F9F9F9 !default;
+
+$gray: #777777 !default;
+$gray-light: #999999 !default;
+$gray-xlight: #BBBBBB !default;
+
+$turquoise: #1abc9c !default;
+$teal: #03949a !default;
+$magenta: #e85765 !default;
+$red: #D64541 !default;
+$green: #61bd6d !default;
+$yellow: #e8c34d !default;
+$orange: #f38035 !default;
+$blue: #2da8cd !default;
+
+
+/*--------------------
+  Globals
+---------------------*/
+
+// Colors
+$color-foreground: $black !default;
+$color-foreground-light: $gray-light !default;
+
+$color-background: $white !default;
+$color-background-dark: $grey-xlight !default;
+
+$color-border: $grey !default;
+$color-border-light: $grey-light !default;
+
+$color-primary: $turquoise !default;
+$color-secondary: $teal !default;
+
+$color-success: $green !default;
+$color-error: $magenta !default;
+
+$fontsize: 14 !default;
+$lineheight: 1.4 !default;
+$radius: 3 !default;
+$margin: 20 !default;
+$padding: 20 !default;
+$fontfamily: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$fontfamily-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
