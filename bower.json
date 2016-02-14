@@ -1,0 +1,25 @@
+{
+  "name": "bloomcss",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Hugo W <me@hugw.io>",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src",
+    "gulp",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "devDependencies": {
+    "jquery": "~2.2.0",
+    "lodash": "~4.0.0",
+    "bourbon": "~4.2.6",
+    "foundation-sites": "~6.1.1",
+    "font-awesome": "~4.5.0"
+  },
+  "resolutions": {
+    "jquery": "~2.2.0"
+  }
+}
