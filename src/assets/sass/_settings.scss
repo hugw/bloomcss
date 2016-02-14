@@ -11,7 +11,8 @@
 ---------------------*/
 
 $white: white !default;
-$black: #444444 !default;
+$black: black !default;
+$black-light: #444 !default;
 
 $grey: #DDDDDD !default;
 $grey-light: #EAEAEA !default;
@@ -36,7 +37,7 @@ $blue: #2da8cd !default;
 ---------------------*/
 
 // Colors
-$color-foreground: $black !default;
+$color-foreground: $black-light !default;
 $color-foreground-light: $gray-light !default;
 
 $color-background: $white !default;
