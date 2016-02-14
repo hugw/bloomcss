@@ -55,8 +55,12 @@ $color-error: $magenta !default;
 // Misc
 $fontsize: 14 !default;
 $lineheight: 1.4 !default;
-$radius: 3 !default;
-$margin: 20 !default;
-$padding: 20 !default;
 $fontfamily: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $fontfamily-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$transition: 0.3s !default;
+$radius: rem-calc(3) !default;
+
+// Gutter for margin
+// and padding rules
+$gutter: 20 !default;
+$gutter-large: 30 !default;
