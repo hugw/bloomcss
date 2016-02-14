@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+bower_components
+npm-debug.log
+tmp
+
+*.todo
+src/assets/js/*min.js
+src/assets/js/*.map
+src/assets/css/*.css
