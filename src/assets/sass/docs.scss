@@ -1,0 +1,157 @@
+/**
+ * Docs
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+// Setup Font
+$fontfamily: 'Roboto', Helvetica, Roboto, Arial, sans-serif;
+@import url('//fonts.googleapis.com/css?family=Roboto:400,300,900,700,100');
+
+// Import bloom
+@import 'bloom';
+
+body {
+  background: $color-background-dark;
+}
+
+
+/*--------------------
+  Highlight
+---------------------*/
+
+.dochighlight {
+  padding: rem-calc(10);
+
+  .html.hljs {
+    padding: 0;
+    line-height: 1.4;
+    background: $color-background-dark;
+  }
+
+  &.-no-margin {
+    margin: 0;
+  }
+}
+
+
+/*--------------------
+  Head
+---------------------*/
+
+.dochead {
+  padding: rem-calc(30 0);
+}
+
+.dochead-logo {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.dochead-actions {
+  display: none;
+}
+
+
+/*--------------------
+  Cards
+---------------------*/
+
+.doccards {}
+
+// Single card
+.doccard {
+  margin: rem-calc(0 0 $gutter 0);
+
+  @include breakpoint(-xlarge up) {
+    margin: rem-calc(0 0 $gutter-large 0);
+  }
+}
+
+// Title
+.doccard-title {
+  font-size: rem-calc(20);
+  font-weight: 900;
+  color: $color-foreground-light;
+  margin: rem-calc(0 0 5 $gutter);
+
+  small {
+    font-weight: normal;
+  }
+
+  @include breakpoint(-xlarge up) {
+    margin: rem-calc(0 0 5 $gutter-large);
+  }
+}
+
+// Section
+.doccard-section {
+  font-size: rem-calc(18);
+  font-weight: 900;
+  margin: rem-calc(2*$gutter 0 $gutter 0);
+  border-bottom: 1px solid $color-border-light;
+  color: $color-foreground;
+  padding: rem-calc(0 0 5 0);
+
+  small {
+    font-weight: normal;
+    color: $color-foreground-light;
+  }
+}
+
+// Content
+.doccard-content {
+  position: relative;
+  background: $color-background;
+  box-shadow: 0px 1px 1px 0 rgba(black, 0.1);
+  padding: rem-calc($gutter);
+  border-radius: $radius;
+  border: 1px solid $color-border;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid $color-border;
+    background: rgba(black, 0.02);
+    width: 100%;
+    height: rem-calc(3);
+    visibility: visible;
+  }
+
+  @include breakpoint(-xlarge up) {
+    padding: rem-calc($gutter-large);
+  }
+}
+
+
+/*--------------------
+  Grid
+---------------------*/
+
+.docgrid {
+  margin-bottom: rem-calc(20);
+}
+
+.docgrid-brick {
+  text-align: center;
+  background: $color-background-dark;
+  padding: rem-calc(3 0);
+  color: $color-foreground-light;
+  font-weight: bold;
+  font-size: rem-calc($fontsize - 2);
+  border: 1px solid $color-border-light;
+  margin: rem-calc(5 0);
+}
