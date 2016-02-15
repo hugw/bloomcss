@@ -4,6 +4,7 @@
   "author": "Hugo W <me@hugw.io>",
   "description": "A minimalistic css framework to make your projects flourish.",
   "license": "MIT",
+  "repository": "https://github.com/hugw/bloomcss",
   "main": "dist/assets/css/bloom.min.css",
   "engines": {
     "node": "5.4.0"
