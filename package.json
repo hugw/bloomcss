@@ -1,8 +1,8 @@
 {
   "name": "bloomcss",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Hugo W <me@hugw.io>",
-  "description": "A minimalistic css framework to make your projects flourish.",
+  "description": "A minimalistic css framework to let your projects flourish.",
   "license": "MIT",
   "homepage": "http://hugw.io/bloomcss/",
   "repository": "https://github.com/hugw/bloomcss",

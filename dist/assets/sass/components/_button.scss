@@ -27,33 +27,19 @@ input[type="reset"] {
   padding-right: rem-calc(5);
 }
 
+.button.-icon .icon {
+  padding: 0;
+  width: (18em / 14);
+  text-align: center;
+}
+
 
 /*--------------------
   Size
 ---------------------*/
 
 .button {
-  &.-xsmall {
-    height: rem-calc(25);
-    line-height: rem-calc(23);
-    font-size: rem-calc($fontsize - 1);
-    padding: 0 rem-calc(10);
-  }
-
-  &.-small {
-    height: rem-calc(30);
-    line-height: rem-calc(28);
-    font-size: rem-calc($fontsize - 1);
-  }
-
-  &.-medium {}
-
-  &.-large {
-    height: rem-calc(40);
-    line-height: rem-calc(38);
-    font-size: rem-calc($fontsize + 1);
-    padding: 0 rem-calc(20);
-  }
+  @include button-size();
 }
 
 
@@ -84,3 +70,93 @@ input[type="reset"] {
 @include button-color('-blue', $blue);
 @include button-color('-orange', $orange);
 @include button-color('-green', $green);
+
+
+/*--------------------
+  Button groups
+---------------------*/
+
+.button-group {
+  display: inline-block;
+  font-size: 0;
+  line-height: 1;
+
+  // Default
+  .button {
+    border-radius: 0;
+  }
+
+  .button:first-child {
+    border-radius: $radius 0 0 $radius;
+  }
+
+  .button:last-child {
+    border-radius: 0 $radius $radius 0;
+  }
+
+  .button:only-child {
+    border-radius: $radius;
+  }
+
+  &:not(.-xsmall):not(.-small):not(.-large)
+  .button:not(.-xsmall):not(.-small):not(.-large) {
+    font-size: rem-calc($fontsize);
+  }
+
+  @include button-group-size();
+}
+
+// Icon
+.button-group.-icon .button:not(.-icon) .icon {
+  padding: 0;
+  width: (18em / 14);
+  text-align: center;
+}
+
+// Hollow
+.button-group.-hollow {
+  .button:not(.-hollow) {
+    position: relative;
+    @include button-hollow();
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      z-index: 100;
+    }
+  }
+}
+
+.button-group .button.-hollow {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: -1px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    z-index: 100;
+  }
+}
+
+// Colors
+.button-group {
+  @include button-group-color();
+  @include button-group-color('-secondary', $color-secondary);
+  @include button-group-color('-success', $color-success);
+  @include button-group-color('-error', $color-error);
+  @include button-group-color('-magenta', $magenta);
+  @include button-group-color('-turquoise', $turquoise);
+  @include button-group-color('-teal', $teal);
+  @include button-group-color('-red', $red);
+  @include button-group-color('-yellow', $yellow);
+  @include button-group-color('-blue', $blue);
+  @include button-group-color('-orange', $orange);
+  @include button-group-color('-green', $green);
+}

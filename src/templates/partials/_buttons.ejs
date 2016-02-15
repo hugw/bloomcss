@@ -3,7 +3,7 @@
     Buttons
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <p>
       <button>Button</button>
       <input type="submit" value="Submit">
@@ -94,14 +94,14 @@
 
     <div class="doccard-section">Icons</div>
 
-    <p>
+    <p style="line-height: 2.5rem">
       <button class="button -xsmall"><i class="icon -heart"></i>xsmall</button>
       <button class="button -small"><i class="icon -heart"></i>small</button>
       <button class="button -medium"><i class="icon -heart"></i>medium</button>
       <button class="button -large"><i class="icon -heart"></i>large</button>
     </p>
 
-    <p>
+    <p style="line-height: 2.5rem">
       <button class="button -hollow -large"><i class="icon -heart"></i>large</button>
       <button class="button -hollow -medium"><i class="icon -heart"></i>medium</button>
       <button class="button -hollow -small"><i class="icon -heart"></i>small</button>
@@ -110,6 +110,79 @@
 
 <pre class="dochighlight"><code class="html">
 <button class="button"><i class="icon -heart"></i> ...</button>
+</code></pre>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -hollow -medium -icon -red"><i class="icon -heart"></i></button>
+      <button class="button -medium -icon -magenta"><i class="icon -heart"></i></button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button -icon"><i class="icon -heart"></i></button>
+</code></pre>
+
+    <div class="doccard-section">Groups</div>
+
+    <p style="line-height: 2.5rem">
+      <span class="button-group -small -teal -icon">
+        <button class="button"><i class="icon -file"></i></button>
+        <button class="button"><i class="icon -tasks"></i></button>
+        <button class="button"><i class="icon -pencil"></i></button>
+        <button class="button"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon"><i class="icon -file"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -tasks"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -pencil"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group -small -teal -icon">
+        <button class="button"><i class="icon -twitter"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
+      </span>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <span class="button-group -small -teal -icon -hollow">
+        <button class="button"><i class="icon -file"></i></button>
+        <button class="button"><i class="icon -tasks"></i></button>
+        <button class="button"><i class="icon -pencil"></i></button>
+        <button class="button"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon -hollow"><i class="icon -file"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -tasks"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -pencil"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group -small -teal -icon -hollow">
+        <button class="button"><i class="icon -twitter"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon -hollow"><i class="icon -facebook"></i></button>
+      </span>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<div class="button-group -small -teal -icon">
+  <button class="button"><i class="icon -twitter"></i></button>
+  ...
+</div>
+
+<!-- OR -->
+
+<div class="button-group">
+  <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
+  ...
+</div>
 </code></pre>
   </div>
 </div>

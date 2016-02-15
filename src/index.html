@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>bloom.css</title>
-  <meta name="description" content="A minimalistic css framework to make your projects flourish.">
+  <meta name="description" content="A minimalistic css framework to let your projects flourish.">
   <meta name="viewport" content="width=device-width">
 
   <!-- Stylesheets -->
@@ -49,7 +49,7 @@ $ npm install bloomcss
     Typography
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <div class="doccard-section">Headings</div>
 
 <h1>Header <small>A small description for this header</small></h1>
@@ -296,7 +296,7 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
     Tables
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <table>
       <thead>
         <tr>
@@ -367,7 +367,7 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
     Buttons
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <p>
       <button>Button</button>
       <input type="submit" value="Submit">
@@ -458,14 +458,14 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 
     <div class="doccard-section">Icons</div>
 
-    <p>
+    <p style="line-height: 2.5rem">
       <button class="button -xsmall"><i class="icon -heart"></i>xsmall</button>
       <button class="button -small"><i class="icon -heart"></i>small</button>
       <button class="button -medium"><i class="icon -heart"></i>medium</button>
       <button class="button -large"><i class="icon -heart"></i>large</button>
     </p>
 
-    <p>
+    <p style="line-height: 2.5rem">
       <button class="button -hollow -large"><i class="icon -heart"></i>large</button>
       <button class="button -hollow -medium"><i class="icon -heart"></i>medium</button>
       <button class="button -hollow -small"><i class="icon -heart"></i>small</button>
@@ -475,6 +475,79 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 <pre class="dochighlight"><code class="html">
 <button class="button"><i class="icon -heart"></i> ...</button>
 </code></pre>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -hollow -medium -icon -red"><i class="icon -heart"></i></button>
+      <button class="button -medium -icon -magenta"><i class="icon -heart"></i></button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button -icon"><i class="icon -heart"></i></button>
+</code></pre>
+
+    <div class="doccard-section">Groups</div>
+
+    <p style="line-height: 2.5rem">
+      <span class="button-group -small -teal -icon">
+        <button class="button"><i class="icon -file"></i></button>
+        <button class="button"><i class="icon -tasks"></i></button>
+        <button class="button"><i class="icon -pencil"></i></button>
+        <button class="button"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon"><i class="icon -file"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -tasks"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -pencil"></i></button>
+        <button class="button -small -blue -icon"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group -small -teal -icon">
+        <button class="button"><i class="icon -twitter"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
+      </span>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <span class="button-group -small -teal -icon -hollow">
+        <button class="button"><i class="icon -file"></i></button>
+        <button class="button"><i class="icon -tasks"></i></button>
+        <button class="button"><i class="icon -pencil"></i></button>
+        <button class="button"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon -hollow"><i class="icon -file"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -tasks"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -pencil"></i></button>
+        <button class="button -small -blue -icon -hollow"><i class="icon -trash"></i></button>
+      </span>
+
+      <span class="button-group -small -teal -icon -hollow">
+        <button class="button"><i class="icon -twitter"></i></button>
+      </span>
+
+      <span class="button-group">
+        <button class="button -small -blue -icon -hollow"><i class="icon -facebook"></i></button>
+      </span>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<div class="button-group -small -teal -icon">
+  <button class="button"><i class="icon -twitter"></i></button>
+  ...
+</div>
+
+<!-- OR -->
+
+<div class="button-group">
+  <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
+  ...
+</div>
+</code></pre>
   </div>
 </div>
 
@@ -483,7 +556,7 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
     Icons <small>Powered by Font Awesome</small>
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <p>
       <i class="icon -heart -fixed-width -large"></i>
       <i class="icon -file -fixed-width -large"></i>
@@ -536,79 +609,10 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 
         <div class="doccard">
   <div class="doccard-title">
-    Visibility <small>Powered by Foundation</small>
-  </div>
-
-  <div class="doccard-content">
-    <p style="line-height: 2.5rem">
-      <button class="button -small -hollow -show-for-xsmall">show for extra small and up</button>
-      <button class="button -small -hollow -show-for-small">show for small and up</button>
-      <button class="button -small -hollow -show-for-medium">show for medium and up</button>
-      <button class="button -small -hollow -show-for-large">show for large and up</button>
-      <button class="button -small -hollow -show-for-xlarge">show for xlarge and up</button>
-    </p>
-
-    <p style="line-height: 2.5rem">
-      <button class="button -small -hollow -hide-for-small">hide for small and up</button>
-      <button class="button -small -hollow -hide-for-medium">hide for medium and up</button>
-      <button class="button -small -hollow -hide-for-large">hide for large and up</button>
-      <button class="button -small -hollow -hide-for-xlarge">hide for extra large and up</button>
-    </p>
-
-    <p style="line-height: 2.5rem">
-      <button class="button -small -hollow -show-for-xsmall-only">show for extra small only</button>
-      <button class="button -small -hollow -show-for-small-only">show for small only</button>
-      <button class="button -small -hollow -show-for-medium-only">show for medium only</button>
-      <button class="button -small -hollow -show-for-large-only">show for large only</button>
-      <button class="button -small -hollow -show-for-xlarge">show for extra large only</button>
-    </p>
-
-    <p style="line-height: 2.5rem">
-      <button class="button -small -hollow -hide-for-xsmall-only">hide for extra small only</button>
-      <button class="button -small -hollow -hide-for-small-only">hide for small only</button>
-      <button class="button -small -hollow -hide-for-medium-only">hide for medium only</button>
-      <button class="button -small -hollow -hide-for-large-only">hide for large only</button>
-      <button class="button -small -hollow -hide-for-xlarge">hide for extra large only</button>
-    </p>
-
-<pre class="dochighlight"><code class="html">
-<button class="-show-for-xsmall-only">show for extra small only</button>
-<button class="-show-for-small-only">show for small only</button>
-<button class="-show-for-medium-only">show for medium only</button>
-<button class="-show-for-large-only">show for large only</button>
-<button class="-show-for-xlarge">show for extra large only</button>
-
-<button class="-hide-for-xsmall-only">hide for extra small only</button>
-<button class="-hide-for-small-only">hide for small only</button>
-<button class="-hide-for-medium-only">hide for medium only</button>
-<button class="-hide-for-large-only">hide for large only</button>
-<button class="-hide-for-xlarge">hide for extra large only</button>
-
-<button class="-show-for-xsmall">show for extra small and up</button>
-<button class="-show-for-small">show for small and up</button>
-<button class="-show-for-medium">show for medium and up</button>
-<button class="-show-for-large">show for large and up</button>
-<button class="-show-for-xlarge">show for xlarge and up</button>
-
-<button class="-hide-for-small">hide for small and up</button>
-<button class="-hide-for-medium">hide for medium and up</button>
-<button class="-hide-for-large">hide for large and up</button>
-<button class="-hide-for-xlarge">hide for extra large and up</button>
-</code></pre>
-  </div>
-</div>
-
-      </div>
-    </div>
-
-    <div class="grid-column -large-6">
-      <div class="doccards">
-        <div class="doccard">
-  <div class="doccard-title">
     Images
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <div class="grid-row -xsmall-up-2">
       <div class="grid-column">
         <figure>
@@ -645,10 +649,38 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 
         <div class="doccard">
   <div class="doccard-title">
+    Panels
+  </div>
+
+  <div class="doccard-content panel">
+    <div class="panel">
+      <h3>Header A small description for this header</h3>
+
+      <p>Maecenas mi ante, pharetra ac odio sed, porta vehicula orci. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+    </div>
+
+    <br>
+
+<pre class="dochighlight"><code class="html">
+<div class="panel">
+  <h3>...</h3>
+  <p>...</p>
+</div>
+</code></pre>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="grid-column -large-6">
+      <div class="doccards">
+        <div class="doccard">
+  <div class="doccard-title">
     Forms
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <form class="form" action="">
   <div class="grid-row -medium-up-2">
     <div class="grid-column">
@@ -1110,7 +1142,7 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
     Grid <small>Powered by Foundation</small>
   </div>
 
-  <div class="doccard-content">
+  <div class="doccard-content panel">
     <div class="grid-row docgrid">
       <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
       <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
@@ -1317,6 +1349,70 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Visibility <small>Powered by Foundation</small>
+  </div>
+
+  <div class="doccard-content panel">
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow -show-for-xsmall">show for extra small and up</button>
+      <button class="button -small -hollow -show-for-small">show for small and up</button>
+      <button class="button -small -hollow -show-for-medium">show for medium and up</button>
+      <button class="button -small -hollow -show-for-large">show for large and up</button>
+      <button class="button -small -hollow -show-for-xlarge">show for xlarge and up</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow -hide-for-small">hide for small and up</button>
+      <button class="button -small -hollow -hide-for-medium">hide for medium and up</button>
+      <button class="button -small -hollow -hide-for-large">hide for large and up</button>
+      <button class="button -small -hollow -hide-for-xlarge">hide for extra large and up</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow -show-for-xsmall-only">show for extra small only</button>
+      <button class="button -small -hollow -show-for-small-only">show for small only</button>
+      <button class="button -small -hollow -show-for-medium-only">show for medium only</button>
+      <button class="button -small -hollow -show-for-large-only">show for large only</button>
+      <button class="button -small -hollow -show-for-xlarge">show for extra large only</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow -hide-for-xsmall-only">hide for extra small only</button>
+      <button class="button -small -hollow -hide-for-small-only">hide for small only</button>
+      <button class="button -small -hollow -hide-for-medium-only">hide for medium only</button>
+      <button class="button -small -hollow -hide-for-large-only">hide for large only</button>
+      <button class="button -small -hollow -hide-for-xlarge">hide for extra large only</button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="-show-for-xsmall-only">show for extra small only</button>
+<button class="-show-for-small-only">show for small only</button>
+<button class="-show-for-medium-only">show for medium only</button>
+<button class="-show-for-large-only">show for large only</button>
+<button class="-show-for-xlarge">show for extra large only</button>
+
+<button class="-hide-for-xsmall-only">hide for extra small only</button>
+<button class="-hide-for-small-only">hide for small only</button>
+<button class="-hide-for-medium-only">hide for medium only</button>
+<button class="-hide-for-large-only">hide for large only</button>
+<button class="-hide-for-xlarge">hide for extra large only</button>
+
+<button class="-show-for-xsmall">show for extra small and up</button>
+<button class="-show-for-small">show for small and up</button>
+<button class="-show-for-medium">show for medium and up</button>
+<button class="-show-for-large">show for large and up</button>
+<button class="-show-for-xlarge">show for xlarge and up</button>
+
+<button class="-hide-for-small">hide for small and up</button>
+<button class="-hide-for-medium">hide for medium and up</button>
+<button class="-hide-for-large">hide for large and up</button>
+<button class="-hide-for-xlarge">hide for extra large and up</button>
+</code></pre>
   </div>
 </div>
 

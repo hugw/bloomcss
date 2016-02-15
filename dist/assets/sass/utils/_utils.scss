@@ -15,17 +15,17 @@
 
   &:hover {
     color: $color;
-    background: shade($background, 20%);
+    background: shade($background, 15%);
   }
 
   &:focus {
     color: $color;
     outline: 0;
-    background: shade($background, 30%);
+    background: shade($background, 20%);
   }
 
   &:active {
-    background: shade($background, 30%);
+    background: shade($background, 20%);
   }
 }
 
@@ -66,6 +66,70 @@
     &.-hollow {
       @include button-hollow($background);
     }
+  }
+}
+
+@mixin button-group-color($name: '-primary', $background: $color-primary, $color: $white) {
+  &.#{$name} {
+    .button {
+      @include button($background, $color);
+    }
+
+    &.-hollow .button {
+      @include button-hollow($background);
+    }
+  }
+}
+
+
+/**
+ * Button size
+ */
+@mixin button-size() {
+  &.-xsmall {
+    height: rem-calc(25);
+    line-height: rem-calc(23);
+    font-size: rem-calc($fontsize - 1);
+    padding: 0 rem-calc(10);
+  }
+
+  &.-small {
+    height: rem-calc(30);
+    line-height: rem-calc(28);
+    font-size: rem-calc($fontsize - 1);
+  }
+
+  &.-medium {}
+
+  &.-large {
+    height: rem-calc(40);
+    line-height: rem-calc(38);
+    font-size: rem-calc($fontsize + 1);
+    padding: 0 rem-calc(20);
+  }
+}
+
+@mixin button-group-size() {
+  &.-xsmall .button {
+    height: rem-calc(25);
+    line-height: rem-calc(23);
+    font-size: rem-calc($fontsize - 1);
+    padding: 0 rem-calc(10);
+  }
+
+  &.-small .button {
+    height: rem-calc(30);
+    line-height: rem-calc(28);
+    font-size: rem-calc($fontsize - 1);
+  }
+
+  &.-medium .button {}
+
+  &.-large .button {
+    height: rem-calc(40);
+    line-height: rem-calc(38);
+    font-size: rem-calc($fontsize + 1);
+    padding: 0 rem-calc(20);
   }
 }
 

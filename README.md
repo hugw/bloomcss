@@ -1,6 +1,6 @@
 ![bloomcss](https://raw.githubusercontent.com/hugw/bloomcss/master/src/assets/imgs/logo.png)
 
-A minimalistic css framework to make your projects flourish.
+A minimalistic css framework to let your projects flourish.
 
 ### Usage
 

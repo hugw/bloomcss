@@ -1,0 +1,42 @@
+/**
+ * Panel component styles
+ *
+ * Inspired by SemanticUI segments
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+.panel {
+  position: relative;
+  background: $white;
+  box-shadow: 0px 1px 1px 0 rgba(black, 0.1);
+  padding: rem-calc($gutter);
+  border-radius: $radius;
+  border: 1px solid $color-border;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid $color-border;
+    background: rgba(black, 0.02);
+    width: 100%;
+    height: rem-calc(3);
+    visibility: visible;
+  }
+
+  @include breakpoint(-xlarge up) {
+    padding: rem-calc($gutter-large);
+  }
+}
