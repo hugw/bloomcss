@@ -1,0 +1,39 @@
+/**
+ * Visibility base styles
+ *
+ * Powered by Foundation
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+@import '../vendor/foundation/components/visibility';
+
+.--hide {
+  display: none !important;
+}
+
+.--invisible {
+  visibility: hidden;
+}
+
+@each $size in $breakpoint-classes {
+  @if $size != -xsmall {
+    .--hide-for#{$size} {
+      @include hide-for($size);
+    }
+
+    .--show-for#{$size} {
+      @include show-for($size);
+    }
+  }
+
+  .--hide-for#{$size}-only {
+    @include hide-for-only($size);
+  }
+
+  .--show-for#{$size}-only {
+    @include show-for-only($size);
+  }
+}

@@ -1,0 +1,65 @@
+/**
+ * Grid base styles
+ *
+ * Powered by Foundation
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+/*--------------------
+  Foundation settings
+---------------------*/
+
+$grid-row-width: rem-calc(1200);
+$grid-column-count: 12;
+
+$grid-column-responsive-gutter: (
+  -xsmall: $gutter,
+  -small:  $gutter,
+  -medium: $gutter,
+  -large:  $gutter,
+  -xlarge: $gutter-large
+);
+
+$breakpoints: (
+  -xsmall: 0,
+  -small:  rem-calc(480),
+  -medium: rem-calc(768),
+  -large:  rem-calc(960),
+  -xlarge: rem-calc(1200)
+);
+
+$breakpoint-classes: (-xsmall -small -medium -large -xlarge);
+
+$global-left: left;
+$global-right: right;
+
+
+/*--------------------
+  Base
+---------------------*/
+
+@import '../vendor/foundation/grid/grid';
+
+// Build grid
+@include foundation-grid(
+  $row: 'grid-row',
+  $column: 'grid-column',
+  $end: '-end',
+  $expanded: '-expanded'
+);
+
+
+/*--------------------
+  Fixed widths
+---------------------*/
+
+.grid-row .grid-row { width: auto !important; }
+
+@include breakpoint(-xsmall only) { .grid-row { width: rem-calc(320); }}
+@include breakpoint(-small only)  { .grid-row { width: rem-calc(480); }}
+@include breakpoint(-medium only) { .grid-row { width: rem-calc(768); }}
+@include breakpoint(-large only)  { .grid-row { width: rem-calc(960); }}
+@include breakpoint(-xlarge up)   { .grid-row { width: rem-calc(1200); }}

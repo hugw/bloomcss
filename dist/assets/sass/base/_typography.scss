@@ -1,0 +1,350 @@
+/**
+ * Typography base styles
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+address,
+blockquote,
+hr,
+pre,
+figure,
+table {
+  margin: rem-calc(0 0 $gutter 0);
+  padding: 0;
+  line-height: inherit;
+}
+
+
+/*--------------------
+  Anchor
+---------------------*/
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  cursor: pointer;
+  @include transition(color $transition);
+
+  &:hover,
+  &:focus {
+    color: mix(black, $color-primary, 20%);
+  }
+
+  img {
+    border: 0;
+  }
+}
+
+
+/*--------------------
+  Heading
+---------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: rem-calc($fontsize);
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  line-height: $lineheight - 0.2;
+
+  small {
+    line-height: 0;
+    color: $color-foreground-light;
+  }
+}
+
+h1 { font-size: rem-calc($fontsize + 10); }
+h2 { font-size: rem-calc($fontsize + 8); }
+h3 { font-size: rem-calc($fontsize + 6); }
+h4 { font-size: rem-calc($fontsize + 4); }
+h5 { font-size: rem-calc($fontsize + 2); }
+h6 { font-size: rem-calc($fontsize); }
+
+
+/*--------------------
+  HR
+---------------------*/
+
+hr {
+  max-width: 100%;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid $color-border-light;
+  clear: both;
+}
+
+
+/*--------------------
+  Address
+---------------------*/
+
+address {
+  font-style: normal;
+}
+
+
+/*--------------------
+  Lists
+---------------------*/
+
+ul,ol {
+  list-style-position: inside;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: rem-calc(0 0 0 20);
+}
+
+ol ol li {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: rem-calc(0 0 10 0);
+}
+
+
+/*--------------------
+  Blockquotes
+---------------------*/
+
+blockquote {
+  padding: rem-calc(0 $gutter);
+  border-left: 3px solid $color-border;
+  font-size: rem-calc($fontsize + 2);
+  color: $color-foreground-light;
+  font-style: italic;
+
+  cite {
+    margin: rem-calc(5 0 0);
+    font-style: normal;
+    font-size: rem-calc($fontsize);
+    color: $color-foreground;
+  }
+}
+
+
+/*--------------------
+  Inlines
+---------------------*/
+
+cite {
+  color: $color-foreground-light;
+
+  &:before {
+    content: '\2014 \0020';
+  }
+}
+
+
+small {
+  font-size: 0.75em;
+  line-height: 1;
+}
+
+s,
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+ 	border-bottom: 1px dotted $color-border;
+	cursor: help;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+sub,
+sup {
+	font-size: rem-calc($fontsize - 3);
+	line-height: 0;
+	position: relative;
+	margin-left: .2rem;
+}
+
+sup {
+	top: -.4rem;
+}
+sub {
+	bottom: -.2rem;
+}
+
+ins,
+u {
+	text-decoration: underline;
+}
+
+mark {
+	background-color: $color-primary;
+	color: $white;
+	text-decoration: none;
+  font-size: rem-calc($fontsize - 2);
+}
+
+
+/*--------------------
+  Code
+---------------------*/
+
+pre,
+code,
+kbd,
+samp,
+var,
+output {
+	font-size: rem-calc($fontsize - 2);
+	font-style: normal;
+	font-family: $fontfamily-monospace;
+}
+
+pre {
+	color: $color-foreground-light;
+	overflow: auto;
+	background: $color-background-dark;
+	padding: rem-calc($gutter);
+	word-wrap: normal;
+  border-radius: $radius;
+}
+
+mark,
+code,
+samp,
+kbd {
+  padding: rem-calc(4 8);
+  display: inline-block;
+  line-height: 1;
+  border-radius: $radius;
+}
+
+code {
+  background: $color-background-dark;
+}
+
+pre code {
+	font-size: 100%;
+	padding: 0;
+	background: none;
+}
+
+var {
+	color: $color-foreground-light;
+}
+
+samp {
+  background: $color-secondary;
+  color: $white;
+}
+
+kbd {
+  background: $color-background-dark;
+  color: $color-foreground-light;
+  white-space: nowrap;
+}
+
+
+/*--------------------
+  Images
+---------------------*/
+
+img {
+  max-width: 100%;
+  height: auto !important;
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+figure {
+  padding: rem-calc(5);
+  border: 1px solid $color-border;
+  border-radius: $radius;
+
+  img {
+    border-radius: $radius;
+  }
+}
+
+figcaption {
+  color: $color-foreground-light;
+  text-align: center;
+  padding: rem-calc(5 0 0);
+  font-size: rem-calc($fontsize - 1);
+}
+
+
+/*--------------------
+  Tables
+---------------------*/
+
+table {
+  width: 100%;
+  empty-cells: show;
+  text-align: left;
+  border: 0;
+  vertical-align: top;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: rem-calc($fontsize - 1);
+
+  @include breakpoint(-xsmall down) {
+    display: block;
+    overflow-x: auto;
+  }
+
+  caption {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  thead,
+  tfoot {
+    font-weight: bold;
+  }
+
+  tbody {
+    color: $color-foreground-light;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid $color-border-light;
+    padding: rem-calc(10);
+  }
+}

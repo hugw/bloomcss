@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>bloom.css</title>
+  <meta name="description" content="A minimalistic css framework to make your projects flourish.">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/grayscale.min.css">
+  <link rel="stylesheet" href="assets/css/docs.min.css">
+  <!-- End of Stylesheets -->
+</head>
+<body>
+  <div class="grid-row">
+    <div class="grid-column -xsmall-12">
+      <div class="dochead">
+        <a href="/" title="bloom.css" class="dochead-logo"><img src="assets/imgs/logo.png" alt="bloom.css"></a>
+
+        <div class="dochead-description">
+          A minimalistic css framework to make your projects flourish.
+        </div>
+
+        <div class="dochead-actions">
+          <a href="/" class="button -small -blue" title="Download"><i class="icon -download"></i> Download</a>
+          <a href="/" class="button -small -turquoise" title="Github"><i class="icon -github"></i> Github</a>
+        </div>
+
+        <div class="dochead-install">
+<pre class="dochighlight -no-margin"><code class="shell">
+# Bower
+$ bower install bloomcss
+
+# NPM
+$ npm install bloomcss
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-column -large-6">
+      <div class="doccards">
+        <div class="doccard">
+  <div class="doccard-title">
+    Typography
+  </div>
+
+  <div class="doccard-content">
+    <div class="doccard-section">Headings</div>
+
+<h1>Header <small>A small description for this header</small></h1>
+<h2>Header <small>A small description for this header</small></h2>
+<h3>Header <small>A small description for this header</small></h3>
+<h4>Header <small>A small description for this header</small></h4>
+<h5>Header <small>A small description for this header</small></h5>
+<h6>Header <small>A small description for this header</small></h6>
+
+<pre class="dochighlight"><code class="html">
+<h1>Header <small>Small description</small></h1>
+<h2>Header <small>Small description</small></h2>
+<h3>Header <small>Small description</small></h3>
+<h4>Header <small>Small description</small></h4>
+<h5>Header <small>Small description</small></h5>
+<h6>Header <small>Small description</small></h6>
+</code></pre>
+
+    <div class="doccard-section">Paragraphs</div>
+
+<p> Aenean at nunc sed erat consequat posuere eu euismod elit. Donec vitae interdum mauris, sed semper diam. Nam et lectus non magna egestas pretium in eu felis. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+<p>Maecenas mi ante, pharetra ac odio sed, porta vehicula orci. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+<hr>
+<p>Maecenas mi ante, pharetra ac odio sed, porta vehicula orci. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+
+<pre class="dochighlight"><code class="html">
+<p>
+  Maecenas mi ante, pharetra ac odio sed,
+  porta vehicula orci.
+  Mauris vel neque felis.
+</p>
+
+<hr>
+
+<p>...</p>
+</code></pre>
+
+    <div class="doccard-section">Address</div>
+
+<div class="grid-row -small-up-2">
+  <div class="grid-column">
+    <address>
+      <strong>Address Tag</strong><br>
+      PO Box 1187523<br>
+      City, State 9878687<br>
+      United States
+    </address>
+  </div>
+
+  <div class="grid-column">
+<pre class="dochighlight -no-margin"><code class="html">
+<address>
+  <strong>Address Tag</strong><br>
+  PO Box 1187523<br>
+  City, State 9878687<br>
+  United States
+</address>
+</code></pre>
+  </div>
+</div>
+
+    <div class="doccard-section">Lists</div>
+
+<div class="grid-row -small-up-2">
+  <div class="grid-column">
+    <ul>
+      <li>list item 1
+        <ul>
+          <li>list item 2</li>
+          <li>list item 2
+            <ul>
+              <li>list item 3</li>
+              <li>list item 3</li>
+            </ul>
+          </li>
+          <li>list item 2</li>
+        </ul>
+      </li>
+      <li>list item 1</li>
+    </ul>
+  </div>
+
+  <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<ul>
+  <li>list item 1
+    <ul>
+      <li>list item 2</li>...
+    </ul>
+  </li>
+</ul>
+</code></pre>
+  </div>
+</div>
+
+<div class="grid-row -small-up-2">
+  <div class="grid-column">
+    <ol>
+      <li>ordered list item 1
+        <ol>
+          <li>ordered list item 2</li>
+          <li>ordered list item 2
+            <ol>
+              <li>ordered list item 3</li>
+              <li>ordered list item 3</li>
+            </ol>
+          </li>
+          <li>ordered list item 2</li>
+        </ol>
+      </li>
+      <li>ordered list item 1</li>
+    </ol>
+  </div>
+
+  <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<ol>
+  <li>ordered list item 1
+    <ol>
+      <li>ordered list item 2</li>
+    </ol>
+  </li>
+</ol>
+</code></pre>
+  </div>
+</div>
+
+<div class="grid-row -small-up-2">
+  <div class="grid-column">
+    <dl>
+      <dt>Description name</dt>
+      <dd>Description value</dd>
+      <dt>Description name</dt>
+      <dd>Description value</dd>
+    </dl>
+  </div>
+
+  <div class="grid-column">
+<pre class="dochighlight -no-margin"><code class="html">
+<dl>
+  <dt>Description name</dt>
+  <dd>Description value</dd>
+</dl>
+</code></pre>
+  </div>
+</div>
+
+    <div class="doccard-section">Blockquotes</div>
+
+<blockquote>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <br>
+  <cite>Source</cite>
+</blockquote>
+
+<pre class="dochighlight"><code class="html">
+<blockquote>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <br>
+  <cite>Source</cite>
+</blockquote>
+</code></pre>
+
+    <div class="doccard-section">Inline tags</div>
+
+<table>
+  <tr>
+    <td><a href="">Link</a></td>
+    <td><code>&lt;a&gt;</code></td>
+    <td><small>small</small></td>
+    <td><code>&lt;small&gt;</code></td>
+  </tr>
+  <tr>
+    <td><abbr title="Cascading Style Sheets">CSS</abbr></td>
+    <td><code>&lt;abbr&gt;</code></td>
+    <td><cite>Cite</cite></td>
+    <td><code>&lt;cite&gt;</code></td>
+  </tr>
+  <tr>
+    <td><code>Code tag</code></td>
+    <td><code>&lt;code&gt;</code></td>
+    <td><samp>Sample tag</samp></td>
+    <td><code>&lt;samp&gt;</code></td>
+  </tr>
+  <tr>
+    <td><var>Variable tag</var></td>
+    <td><code>&lt;var&gt;</code></td>
+    <td><mark>Mark text</mark></td>
+    <td><code>&lt;mark&gt;</code></td>
+  </tr>
+  <tr>
+    <td><kbd>Shortcut</kbd></td>
+    <td><code>&lt;kbd&gt;</code></td>
+    <td><del>Deleted</del></td>
+    <td><code>&lt;del&gt;</code></td>
+  </tr>
+  <tr>
+    <td><i>Italic</i></td>
+    <td><code>&lt;i&gt;</code></td>
+    <td><em>Emphasis</em></td>
+    <td><code>&lt;em&gt;</code></td>
+  </tr>
+  <tr>
+    <td><strong>Highlighted</strong></td>
+    <td><code>&lt;strong&gt;</code></td>
+    <td><b>Bold</b></td>
+    <td><code>&lt;b&gt;</code></td>
+  </tr>
+  <tr>
+    <td>x<sup>superscript</sup></td>
+    <td><code>&lt;sup&gt;</code></td>
+    <td>x<sub>subscript</sub></td>
+    <td><code>&lt;sub&gt;</code></td>
+  </tr>
+</table>
+
+<pre class="dochighlight"><code class="html">
+<a href="">Link</a>     <small>small</small>
+<cite>Cite</cite>       <abbr title="Cascading Style Sheets">CSS</abbr>
+<code>Code tag</code>   <samp>Sample tag</samp>
+<var>Variable tag</var> <mark>Mark text</mark>
+<kbd>Shortcut</kbd>     <del>Deleted</del>
+<i>Italic</i>           <em>Emphasis</em>
+<b>Bold</b>             <strong>Highlighted</strong>
+x<sup>sup</sup>         x<sub>sub</sub>
+</code></pre>
+
+    <div class="doccard-section">Preformatted text</div>
+
+<pre>Lorem ipsum dolor sit amet, <code>consectetur</code> adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
+
+<pre class="dochighlight"><code class="html">
+<pre>Lorem ipsum dolor sit amet,<code>consectetur</code> adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
+</code></pre>
+
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Tables
+  </div>
+
+  <div class="doccard-content">
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Email</th>
+          <th>Github</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jon Doe</td>
+          <td>jd@gmail.com</td>
+          <td>@jd</td>
+        </tr>
+        <tr>
+          <td>Eva G.</td>
+          <td>eg@gmail.com</td>
+          <td>@eg</td>
+        </tr>
+        <tr>
+          <td>Hugw Grant</td>
+          <td>hg@gmail.com</td>
+          <td>@hg</td>
+        </tr>
+        <tr>
+          <td>Stiv Mors</td>
+          <td>sm@gmail.com</td>
+          <td>@sm</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Accounts</td>
+          <td>4</td>
+        </tr>
+      </tfoot>
+    </table>
+
+<pre class="dochighlight"><code class="html">
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Email</th>
+      <th>Github</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jon Doe</td>
+      <td>jd@gmail.com</td>
+      <td>@jd</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total Accounts</td>
+      <td>4</td>
+    </tr>
+  </tfoot>
+</table>
+</code></pre>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Buttons
+  </div>
+
+  <div class="doccard-content">
+    <p>
+      <button>Button</button>
+      <input type="submit" value="Submit">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <a href="#" class="button">Link</a>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button>Button</button>
+<input type="submit" value="Submit">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<a href="#" class="button">Link</a>
+</code></pre>
+
+    <div class="doccard-section">Sizes</div>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -xsmall">xsmall</button>
+      <button class="button -small">small</button>
+      <button class="button -medium">medium</button>
+      <button class="button -large">large</button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button -xsmall">xsmall</button>
+<button class="button -small">small</button>
+<button class="button -medium">medium</button>
+<button class="button -large">large</button>
+</code></pre>
+
+    <div class="doccard-section">Hollow</div>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -hollow">Button</button>
+      <input type="submit" value="Submit" class="button -hollow">
+      <button type="submit" class="button -hollow">Submit</button>
+      <button type="reset" class="button -hollow">Reset</button>
+      <a href="#" class="button -hollow">Link</a>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button -hollow">hollow</button>
+</code></pre>
+
+
+    <div class="doccard-section">Colors</div>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -primary -small">-primary</button>
+      <button class="button -secondary -small">-secondary</button>
+      <button class="button -success -small">-success</button>
+      <button class="button -error -small">-error</button>
+
+      <br>
+      <button class="button -primary -hollow -small">-primary</button>
+      <button class="button -secondary -hollow -small">-secondary</button>
+      <button class="button -success -hollow -small">-success</button>
+      <button class="button -error -hollow -small">-error</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -yellow -small">-yellow</button>
+      <button class="button -orange -small">-orange</button>
+      <button class="button -red -small">-red</button>
+      <button class="button -magenta -small">-magenta</button>
+      <button class="button -blue -small">-blue</button>
+      <button class="button -green -small">-green</button>
+      <button class="button -turquoise -small">-turquoise</button>
+      <button class="button -teal -small">-teal</button>
+
+      <br>
+      <button class="button -hollow -yellow -small">-yellow</button>
+      <button class="button -hollow -orange -small">-orange</button>
+      <button class="button -hollow -red -small">-red</button>
+      <button class="button -hollow -magenta -small">-magenta</button>
+      <button class="button -hollow -blue -small">-blue</button>
+      <button class="button -hollow -green -small">-green</button>
+      <button class="button -hollow -turquoise -small">-turquoise</button>
+      <button class="button -hollow -teal -small">-teal</button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button -magenta">magenta</button>
+<button class="button -primary">primary</button>
+</code></pre>
+
+    <div class="doccard-section">Icons</div>
+
+    <p>
+      <button class="button -xsmall"><i class="icon -heart"></i>xsmall</button>
+      <button class="button -small"><i class="icon -heart"></i>small</button>
+      <button class="button -medium"><i class="icon -heart"></i>medium</button>
+      <button class="button -large"><i class="icon -heart"></i>large</button>
+    </p>
+
+    <p>
+      <button class="button -hollow -large"><i class="icon -heart"></i>large</button>
+      <button class="button -hollow -medium"><i class="icon -heart"></i>medium</button>
+      <button class="button -hollow -small"><i class="icon -heart"></i>small</button>
+      <button class="button -hollow -xsmall"><i class="icon -heart"></i>xsmall</button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="button"><i class="icon -heart"></i> ...</button>
+</code></pre>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Icons <small>Powered by Font Awesome</small>
+  </div>
+
+  <div class="doccard-content">
+    <p>
+      <i class="icon -heart -fixed-width -large"></i>
+      <i class="icon -file -fixed-width -large"></i>
+      <i class="icon -twitter -fixed-width -large"></i>
+      <i class="icon -bars -fixed-width -large"></i>
+      <i class="icon -child -fixed-width -large"></i>
+      <i class="icon -user -fixed-width -large"></i>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<i class="icon -heart"></i>
+<i class="icon -file"></i>
+<i class="icon -twitter"></i>
+<i class="icon -bars"></i>
+<i class="icon -child"></i>
+<i class="icon -user"></i>
+</code></pre>
+
+    <div class="doccard-section">Animated</div>
+
+    <p>
+      <i class="icon -spinner -spin -fixed-width -large"></i>
+      <i class="icon -circle-o-notch -spin -fixed-width -large"></i>
+      <i class="icon -refresh -spin -fixed-width -large"></i>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<i class="icon -spinner -spin"></i>
+<i class="icon -circle-o-notch -spin"></i>
+<i class="icon -refresh -spin"></i>
+</code></pre>
+
+    <div class="doccard-section">Sizes</div>
+
+    <p>
+      <i class="icon -chrome -fixed-width"></i>
+      <i class="icon -chrome -fixed-width -large"></i>
+      <i class="icon -chrome -fixed-width -xlarge"></i>
+      <i class="icon -chrome -fixed-width -xxlarge"></i>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<i class="icon -chrome"></i>
+<i class="icon -chrome -large"></i>
+<i class="icon -chrome -xlarge"></i>
+<i class="icon -chrome -xxlarge"></i>
+</code></pre>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Visibility <small>Powered by Foundation</small>
+  </div>
+
+  <div class="doccard-content">
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow --show-for-xsmall">show for extra small and up</button>
+      <button class="button -small -hollow --show-for-small">show for small and up</button>
+      <button class="button -small -hollow --show-for-medium">show for medium and up</button>
+      <button class="button -small -hollow --show-for-large">show for large and up</button>
+      <button class="button -small -hollow --show-for-xlarge">show for xlarge and up</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow --hide-for-small">hide for small and up</button>
+      <button class="button -small -hollow --hide-for-medium">hide for medium and up</button>
+      <button class="button -small -hollow --hide-for-large">hide for large and up</button>
+      <button class="button -small -hollow --hide-for-xlarge">hide for extra large and up</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow --show-for-xsmall-only">show for extra small only</button>
+      <button class="button -small -hollow --show-for-small-only">show for small only</button>
+      <button class="button -small -hollow --show-for-medium-only">show for medium only</button>
+      <button class="button -small -hollow --show-for-large-only">show for large only</button>
+      <button class="button -small -hollow --show-for-xlarge">show for extra large only</button>
+    </p>
+
+    <p style="line-height: 2.5rem">
+      <button class="button -small -hollow --hide-for-xsmall-only">hide for extra small only</button>
+      <button class="button -small -hollow --hide-for-small-only">hide for small only</button>
+      <button class="button -small -hollow --hide-for-medium-only">hide for medium only</button>
+      <button class="button -small -hollow --hide-for-large-only">hide for large only</button>
+      <button class="button -small -hollow --hide-for-xlarge">hide for extra large only</button>
+    </p>
+
+<pre class="dochighlight"><code class="html">
+<button class="--show-for-xsmall-only">show for extra small only</button>
+<button class="--show-for-small-only">show for small only</button>
+<button class="--show-for-medium-only">show for medium only</button>
+<button class="--show-for-large-only">show for large only</button>
+<button class="--show-for-xlarge">show for extra large only</button>
+
+<button class="--hide-for-xsmall-only">hide for extra small only</button>
+<button class="--hide-for-small-only">hide for small only</button>
+<button class="--hide-for-medium-only">hide for medium only</button>
+<button class="--hide-for-large-only">hide for large only</button>
+<button class="--hide-for-xlarge">hide for extra large only</button>
+
+<button class="--show-for-xsmall">show for extra small and up</button>
+<button class="--show-for-small">show for small and up</button>
+<button class="--show-for-medium">show for medium and up</button>
+<button class="--show-for-large">show for large and up</button>
+<button class="--show-for-xlarge">show for xlarge and up</button>
+
+<button class="--hide-for-small">hide for small and up</button>
+<button class="--hide-for-medium">hide for medium and up</button>
+<button class="--hide-for-large">hide for large and up</button>
+<button class="--hide-for-xlarge">hide for extra large and up</button>
+</code></pre>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="grid-column -large-6">
+      <div class="doccards">
+        <div class="doccard">
+  <div class="doccard-title">
+    Images
+  </div>
+
+  <div class="doccard-content">
+    <div class="grid-row -xsmall-up-2">
+      <div class="grid-column">
+        <figure>
+          <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
+          <figcaption>
+            A caption text.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<figure>
+  <img />
+  <figcaption>
+    A caption text.
+  </figcaption>
+</figure>
+</code></pre>
+      </div>
+
+      <div class="grid-column">
+        <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
+      </div>
+
+      <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<img />
+</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Forms
+  </div>
+
+  <div class="doccard-content">
+    <form class="form" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email">
+        <span class="field-help">Some help text</span>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Enter name">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Select Menu</label>
+        <select>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Checkbox options</label>
+        <input type="checkbox"><label>Checkbox 1</label>
+        <input type="checkbox"><label>Checkbox 2</label>
+        <span class="field-help">Some help text</span>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Radio options</label>
+        <input type="radio" name="test" value="1" required><label>Radio 1</label>
+        <input type="radio" name="test" value="2"><label>Radio 2</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Misc field</label>
+
+    <div class="grid-row">
+      <div class="grid-column -xsmall-6 -medium-8">
+        <input type="text" placeholder="Enter misc">
+      </div>
+
+      <div class="grid-column -xsmall-6 -medium-4">
+        <button class="button">Enter Now</button>
+      </div>
+    </div>
+
+    <span class="field-help">Some help text</span>
+  </div>
+
+  <div class="field">
+    <label>Textarea</label>
+    <textarea placeholder="textarea"></textarea>
+    <span class="field-help">Some help text</span>
+  </div>
+
+  <div class="field">
+    <label>Multiple options</label>
+    <select name="select-multi" multiple="multiple" size="4">
+      <optgroup label="Group 1">
+        <option value="1">Some text goes here</option>
+        <option value="2">Some text goes here</option>
+        <option value="3">Some text goes here</option>
+      </optgroup>
+      <optgroup label="Group 2">
+        <option value="4">Some text goes here</option>
+        <option value="5">Some text goes here</option>
+        <option value="6">Some text goes here</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit">Submit</button>
+    <input type="submit" value="Reset" />
+  </div>
+</form>
+
+<pre class="dochighlight"><code class="html">
+<form class="form" action="">
+  <div class="field">
+    <label>Email address</label>
+    <input type="email" placeholder="Enter email">
+    <span class="field-help">Some help text</span>
+  </div>
+
+  <div class="field">
+    <label>Name</label>
+    <input type="text" placeholder="Enter name">
+  </div>
+
+  <div class="field">
+    <label>Password</label>
+    <input type="password" placeholder="Password">
+  </div>
+
+  <div class="field">
+    <label>Select Menu</label>
+    <select>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Checkbox options</label>
+    <input type="checkbox"><label>Checkbox 1</label>
+    <input type="checkbox"><label>Checkbox 2</label>
+    <span class="field-help">Some help text</span>
+  </div>
+
+  <div class="field">
+    <label>Radio options</label>
+    <input type="radio" name="test" value="1" required><label>Radio 1</label>
+    <input type="radio" name="test" value="2"><label>Radio 2</label>
+  </div>
+
+  <div class="field">
+    <label>Textarea</label>
+    <textarea placeholder="textarea"></textarea>
+    <span class="field-help">Some help text</span>
+  </div>
+
+  <div class="field">
+    <label>Multiple options</label>
+    <select name="select-multi" multiple="multiple" size="4">
+      <optgroup label="Group 1">
+        <option value="1">Some text goes here</option>
+        <option value="2">Some text goes here</option>
+        <option value="3">Some text goes here</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit">Submit</button>
+    <input type="submit" value="Reset" />
+  </div>
+</form>
+</code></pre>
+
+    <div class="doccard-section">Fieldset</div>
+
+<fieldset>
+  <legend>Fieldset form</legend>
+
+  <form class="form" action="">
+    <div class="grid-row -medium-up-2">
+      <div class="grid-column">
+        <div class="field">
+          <label>Email address</label>
+          <input type="email" placeholder="Enter email">
+        </div>
+      </div>
+
+      <div class="grid-column">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Enter name">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Textarea</label>
+      <textarea placeholder="textarea"></textarea>
+    </div>
+  </form>
+</fieldset>
+
+
+<pre class="dochighlight"><code class="html">
+<fieldset>
+  <legend>Fieldset form</legend>
+  ...
+</fieldset>
+</code></pre>
+
+    <div class="doccard-section">Disabled state</div>
+
+<form class="form" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Enter name" disabled>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Select Menu</label>
+        <select disabled>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Checkbox options</label>
+        <input type="checkbox" disabled><label>Checkbox 1</label>
+        <input type="checkbox" disabled><label>Checkbox 2</label>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Radio options</label>
+        <input type="radio" name="test" value="1" disabled><label>Radio 1</label>
+        <input type="radio" name="test" value="2" disabled><label>Radio 2</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Textarea</label>
+    <textarea placeholder="textarea" disabled></textarea>
+  </div>
+
+  <div class="field">
+    <label>Multiple options</label>
+    <select name="select-multi" multiple="multiple" size="4" disabled>
+      <optgroup label="Group 1">
+        <option value="1">Some text goes here</option>
+        <option value="2">Some text goes here</option>
+        <option value="3">Some text goes here</option>
+      </optgroup>
+      <optgroup label="Group 2">
+        <option value="4">Some text goes here</option>
+        <option value="5">Some text goes here</option>
+        <option value="6">Some text goes here</option>
+      </optgroup>
+    </select>
+  </div>
+</form>
+
+<pre class="dochighlight"><code class="html">
+<input type="text" disabled="disabled">
+
+<select disabled="disabled">
+  <option value="1">Option 1</option>
+</select>
+</code></pre>
+
+    <div class="doccard-section">Sizes</div>
+
+<form class="form" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Large</label>
+        <input type="email" placeholder="Input field" class="-large">
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <label>&nbsp;</label>
+      <select class="-large">
+        <option value="">Select</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Medium</label>
+        <input type="email" placeholder="Input field" class="-medium">
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <label>&nbsp;</label>
+      <select class="-medium">
+        <option value="">Select</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Small</label>
+        <input type="email" placeholder="Input field" class="-small">
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <label>&nbsp;</label>
+      <select class="-small">
+        <option value="">Select</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+    </div>
+  </div>
+</form>
+</fieldset>
+
+
+<pre class="dochighlight"><code class="html">
+<input type="text" class="-large">
+<input type="text" class="-medium">
+<input type="text" class="-small">
+
+<select class="-large">...</select>
+<select class="-medium">...</select>
+<select class="-small">...</select>
+</code></pre>
+
+    <div class="doccard-section">Loading <small>Inspired by SemantiUI</small></div>
+
+<form class="form -loading" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email">
+        <span class="help">Some help text</span>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Enter name">
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Textarea</label>
+    <textarea placeholder="textarea"></textarea>
+  </div>
+</form>
+
+<pre class="dochighlight"><code class="html">
+<div class="form -loading">
+  ...
+</div>
+</code></pre>
+
+    <div class="doccard-section">States</div>
+
+<form class="form" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field -error">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email">
+        <span class="field-help">Some help text</span>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field -error">
+        <label>Name</label>
+        <input type="text" placeholder="Enter name">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field -error">
+        <label>Select Menu</label>
+        <select>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field -error">
+        <label>Checkbox options</label>
+        <input type="checkbox"><label>Checkbox 1</label>
+        <input type="checkbox"><label>Checkbox 2</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="field -error">
+    <label>Textarea</label>
+    <textarea placeholder="textarea"></textarea>
+    <span class="field-help">Some help text</span>
+  </div>
+</form>
+
+<form class="form" action="">
+  <div class="grid-row -medium-up-2">
+    <div class="grid-column">
+      <div class="field -success">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email">
+        <span class="field-help">Some help text</span>
+      </div>
+    </div>
+
+    <div class="grid-column">
+      <div class="field -success">
+        <label>Name</label>
+        <input type="text" placeholder="Enter name">
+      </div>
+    </div>
+  </div>
+
+  <div class="field -success">
+    <label>Textarea</label>
+    <textarea placeholder="textarea"></textarea>
+  </div>
+</form>
+
+<pre class="dochighlight"><code class="html">
+<div class="field -success">
+  ...
+</div>
+
+<div class="field -error">
+  ...
+</div>
+</code></pre>
+
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Grid <small>Powered by Foundation</small>
+  </div>
+
+  <div class="doccard-content">
+    <div class="grid-row docgrid">
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+      <div class="grid-column -xsmall-1"><div class="docgrid-brick">1</div></div>
+
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+      <div class="grid-column -xsmall-2"><div class="docgrid-brick">2</div></div>
+
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+
+      <div class="grid-column -xsmall-4"><div class="docgrid-brick">4</div></div>
+      <div class="grid-column -xsmall-4"><div class="docgrid-brick">4</div></div>
+      <div class="grid-column -xsmall-4"><div class="docgrid-brick">4</div></div>
+
+      <div class="grid-column -xsmall-6"><div class="docgrid-brick">6</div></div>
+      <div class="grid-column -xsmall-6"><div class="docgrid-brick">6</div></div>
+
+      <div class="grid-column -xsmall-5"><div class="docgrid-brick">5</div></div>
+      <div class="grid-column -xsmall-7"><div class="docgrid-brick">7</div></div>
+
+      <div class="grid-column -xsmall-4"><div class="docgrid-brick">4</div></div>
+      <div class="grid-column -xsmall-8"><div class="docgrid-brick">8</div></div>
+
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+      <div class="grid-column -xsmall-9"><div class="docgrid-brick">9</div></div>
+
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+      <div class="grid-column -xsmall-6"><div class="docgrid-brick">6</div></div>
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+
+      <div class="grid-column -xsmall-5"><div class="docgrid-brick">5</div></div>
+      <div class="grid-column -xsmall-4"><div class="docgrid-brick">4</div></div>
+      <div class="grid-column -xsmall-3"><div class="docgrid-brick">3</div></div>
+    </div>
+
+<pre class="dochighlight -no-margin"><code class="html">
+<div class="grid-row">
+  ...
+
+  <div class="grid-column -xsmall-4">4</div>
+  <div class="grid-column -xsmall-4">4</div>
+  <div class="grid-column -xsmall-4">4</div>
+
+  <div class="grid-column -xsmall-6">6</div>
+  <div class="grid-column -xsmall-6">6</div>
+
+  <div class="grid-column -xsmall-4">4</div>
+  <div class="grid-column -xsmall-8">8</div>
+
+  <div class="grid-column -xsmall-3">3</div>
+  <div class="grid-column -xsmall-9">9</div>
+</div>
+</code></pre>
+
+    <div class="doccard-section">Mixed grid</div>
+
+    <div class="grid-row docgrid">
+      <div class="grid-column -xsmall-6 -small-9 -medium-5 -large-3 -xlarge-10"><div class="docgrid-brick">:)</div></div>
+      <div class="grid-column -xsmall-6 -small-3 -medium-7 -large-9 -xlarge-2"><div class="docgrid-brick">:)</div></div>
+    </div>
+
+<pre class="dochighlight -no-margin"><code class="html">
+<div class="grid-row">
+  <div class="grid-column -xsmall-6 -small-9 -medium-5 -large-3 -xlarge-10">:)</div>
+  <div class="grid-column -xsmall-6 -small-3 -medium-7 -large-9 -xlarge-2">:)</div>
+</div>
+</code></pre>
+
+    <div class="doccard-section">Responsive sizes</div>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Extra small</td>
+          <td colspan="3">(< 480px)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="10%"><strong>Prefix</strong></td>
+          <td><code>-xsmall-</code></td>
+          <td width="10%"><strong>Size</strong></td>
+          <td>320px</td>
+        </tr>
+        <tr>
+          <td><strong>Columns</strong></td>
+          <td>12</td>
+          <td><strong>Gutter</strong></td>
+          <td>20px (10px each side)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Small</td>
+          <td colspan="3">(≥ 480px)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="10%"><strong>Prefix</strong></td>
+          <td><code>-small-</code></td>
+          <td width="10%"><strong>Size</strong></td>
+          <td>480px</td>
+        </tr>
+        <tr>
+          <td><strong>Columns</strong></td>
+          <td>12</td>
+          <td><strong>Gutter</strong></td>
+          <td>20px (10px each side)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Medium</td>
+          <td colspan="3">(≥ 768px)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="10%"><strong>Prefix</strong></td>
+          <td><code>-medium-</code></td>
+          <td width="10%"><strong>Size</strong></td>
+          <td>768px</td>
+        </tr>
+        <tr>
+          <td><strong>Columns</strong></td>
+          <td>12</td>
+          <td><strong>Gutter</strong></td>
+          <td>20px (10px each side)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Large</td>
+          <td colspan="3">(≥ 960px)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="10%"><strong>Prefix</strong></td>
+          <td><code>-large-</code></td>
+          <td width="10%"><strong>Size</strong></td>
+          <td>960px</td>
+        </tr>
+        <tr>
+          <td><strong>Columns</strong></td>
+          <td>12</td>
+          <td><strong>Gutter</strong></td>
+          <td>20px (10px each side)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Extra large</td>
+          <td colspan="3">(≥ 1200px)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="10%"><strong>Prefix</strong></td>
+          <td><code>-xlarge-</code></td>
+          <td width="10%"><strong>Size</strong></td>
+          <td>1200px</td>
+        </tr>
+        <tr>
+          <td><strong>Columns</strong></td>
+          <td>12</td>
+          <td><strong>Gutter</strong></td>
+          <td>30px (15px each side)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascripts -->
+  <script src="assets/js/vendor.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+  <!-- End of Javascripts -->
+</body>
+</html>

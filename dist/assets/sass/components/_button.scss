@@ -1,0 +1,86 @@
+/**
+ * Button component styles
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"] {
+  line-height: rem-calc(33);
+  height: rem-calc(35);
+  display: inline-block;
+  border-radius: $radius;
+  padding: 0 rem-calc(15);
+  @include transition(all $transition);
+  border: 1px solid transparent;
+
+  & {
+    @include button();
+  }
+}
+
+.button .icon {
+  padding-right: rem-calc(5);
+}
+
+
+/*--------------------
+  Size
+---------------------*/
+
+.button {
+  &.-xsmall {
+    height: rem-calc(25);
+    line-height: rem-calc(23);
+    font-size: rem-calc($fontsize - 1);
+    padding: 0 rem-calc(10);
+  }
+
+  &.-small {
+    height: rem-calc(30);
+    line-height: rem-calc(28);
+    font-size: rem-calc($fontsize - 1);
+  }
+
+  &.-medium {}
+
+  &.-large {
+    height: rem-calc(40);
+    line-height: rem-calc(38);
+    font-size: rem-calc($fontsize + 1);
+    padding: 0 rem-calc(20);
+  }
+}
+
+
+/*--------------------
+  Hollow
+---------------------*/
+
+.button.-hollow {
+  & {
+    @include button-hollow();
+  }
+}
+
+
+/*--------------------
+  Colors
+---------------------*/
+
+@include button-color();
+@include button-color('-secondary', $color-secondary);
+@include button-color('-success', $color-success);
+@include button-color('-error', $color-error);
+@include button-color('-magenta', $magenta);
+@include button-color('-turquoise', $turquoise);
+@include button-color('-teal', $teal);
+@include button-color('-red', $red);
+@include button-color('-yellow', $yellow);
+@include button-color('-blue', $blue);
+@include button-color('-orange', $orange);
+@include button-color('-green', $green);

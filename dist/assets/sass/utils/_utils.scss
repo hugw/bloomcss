@@ -1,0 +1,94 @@
+/**
+ * Utils functions and mixins
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+/**
+ * Button
+ */
+@mixin button($background: $color-foreground-light, $color: $white) {
+  background: $background;
+  color: $color;
+
+  &:hover {
+    color: $color;
+    background: shade($background, 20%);
+  }
+
+  &:focus {
+    color: $color;
+    outline: 0;
+    background: shade($background, 30%);
+  }
+
+  &:active {
+    background: shade($background, 30%);
+  }
+}
+
+
+/**
+ * Button hollowed
+ */
+@mixin button-hollow($color: $color-foreground-light) {
+  background: none !important;
+  color: shade($color, 10%);
+  border: 1px solid $color;
+
+  &:hover {
+    color: shade($color, 30%);
+    border-color: shade($color, 20%);
+  }
+
+  &:focus {
+    outline: 0;
+    color: shade($color, 40%);
+    border-color: shade($color, 30%);
+  }
+
+  &:active {
+    color: shade($color, 40%);
+    border-color: shade($color, 30%);
+  }
+}
+
+
+/**
+ * Button colored
+ */
+@mixin button-color($name: '-primary', $background: $color-primary, $color: $white) {
+  .button.#{$name} {
+    @include button($background, $color);
+
+    &.-hollow {
+      @include button-hollow($background);
+    }
+  }
+}
+
+
+/**
+ * Field colored
+ */
+@mixin field-color($name: '-error', $color: $color-error) {
+  &.#{$name} {
+    #{text-inputs()},
+    textarea,
+    select {
+      border-color: tint($color, 60%);
+      color: shade($color, 20%);
+
+      &:focus {
+        background-color: tint($color, 95%);
+      }
+    }
+
+    > label,
+    > .field-help {
+      color: shade($color, 20%);
+    }
+  }
+}

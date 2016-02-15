@@ -1,0 +1,73 @@
+/**
+ * Icon component styles
+ *
+ * Powered by Font Awesome
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+/*--------------------
+  Fontawesome Settings
+---------------------*/
+
+$fa-font-size-base: rem-calc($fontsize);
+$fa-font-path: 'https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts';
+$fa-css-prefix: 'icon.';
+
+
+/*--------------------
+  Base
+---------------------*/
+
+@import '../vendor/font-awesome/variables';
+@import '../vendor/font-awesome/mixins';
+@import '../vendor/font-awesome/path';
+@import '../vendor/font-awesome/icons';
+
+.icon {
+  @include fa-icon();
+}
+
+
+/*--------------------
+  Fixed width
+---------------------*/
+
+.icon.-fixed-width {
+  width: (18em / 14);
+  text-align: center;
+}
+
+
+/*--------------------
+  Animation
+---------------------*/
+
+.icon.-spin {
+  @include animation(iconSpin 2s linear);
+  @include animation-iteration-count(infinite);
+}
+
+@include keyframes(iconSpin) {
+  0% { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(360deg)); }
+}
+
+
+/*--------------------
+  Sizes
+---------------------*/
+
+.icon.-large {
+  font-size: rem-calc($fontsize * 1.5);
+}
+
+.icon.-xlarge {
+  font-size: rem-calc($fontsize * 2);
+}
+
+.icon.-xxlarge {
+  font-size: rem-calc($fontsize * 2.5);
+}
