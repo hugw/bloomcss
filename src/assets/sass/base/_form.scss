@@ -1,0 +1,229 @@
+/**
+ * Form base styles
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+form {
+  margin: rem-calc(0 0 $gutter 0);
+}
+
+
+/*--------------------
+  Text
+---------------------*/
+
+#{text-inputs()},
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: rem-calc(35);
+  padding: rem-calc(10);
+  border: 1px solid $color-border;
+  margin: 0;
+  font-family: $fontfamily;
+  font-size: rem-calc($fontsize);
+  color: $color-foreground;
+  background-color: $white;
+  border-radius: $radius;
+
+  &:focus {
+    background-color: $color-background-dark;
+    outline: none;
+  }
+
+  &::-moz-placeholder {
+    color: $color-foreground-light;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-foreground-light;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-foreground-light;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  height: auto;
+  min-height: rem-calc(50);
+  border-radius: $radius;
+
+  &[rows] {
+    height: auto;
+  }
+}
+
+// Disable state
+input,
+textarea {
+  &:disabled,
+  &[readonly] {
+   background-color: $color-background-dark;
+   border: 1px solid $color-border-light;
+   cursor: default;
+   color: $color-foreground-light;
+  }
+}
+
+[type='submit'],
+[type='button'] {
+  border-radius: $radius;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type='search'] {
+  box-sizing: border-box;
+}
+
+[type='number'] {
+  -moz-appearance: textfield;
+
+  [type='number']::-webkit-inner-spin-button,
+  [type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+[type='file'] {
+  width: 100%;
+}
+
+
+/*--------------------
+  Label
+---------------------*/
+
+label {
+  display: block;
+  margin: rem-calc(0 0 3);
+  font-size: rem-calc($fontsize - 1);
+  color: $color-foreground;
+  font-weight: bold;
+}
+
+
+/*--------------------
+  Checkbox / Radio
+---------------------*/
+
+[type='checkbox'] + label,
+[type='radio'] + label {
+  display: inline-block;
+  vertical-align: baseline;
+  margin: rem-calc(0 10 0 5);
+  font-weight: normal;
+}
+
+
+/*--------------------
+  Select
+---------------------*/
+
+select {
+  width: 100%;
+  height: rem-calc(35);
+  padding: rem-calc(8);
+  border: 1px solid $color-border;
+  margin: 0;
+  font-size: rem-calc($fontsize);
+  font-family: $fontfamily;
+  line-height: normal;
+  color: $color-foreground;
+  background-color: $white;
+  border-radius: $radius;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:focus {
+    background-color: $color-background-dark;
+    outline: none;
+  }
+
+  // Arrow
+  @include background-triangle($color-foreground);
+  background-size: 9px 6px;
+  background-position: right center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+
+  &:disabled {
+    background-color: $color-background-dark;
+    border: 1px solid $color-border-light;
+    cursor: default;
+    @include background-triangle($color-foreground-light);
+    color: $color-foreground-light;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &[multiple] {
+    height: auto;
+    background-size: 0;
+  }
+
+  &::-moz-placeholder {
+    color: $color-foreground-light;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-foreground-light;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-foreground-light;
+  }
+}
+
+
+/*--------------------
+  Fieldset
+---------------------*/
+
+fieldset {
+  border: 1px solid $color-border;
+  padding: rem-calc($gutter/2 $gutter $gutter);
+  margin: rem-calc(0 0 $gutter);
+  border-radius: $radius;
+
+  form {
+    margin: 0;
+  }
+
+  legend {
+    background: $white;
+    padding: rem-calc(0 5);
+    margin: 0;
+    margin-left: rem-calc(-5);
+    color: $color-foreground-light;
+  }
+}
+
+
+/*--------------------
+  Buttons
+---------------------*/
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
