@@ -25,10 +25,18 @@ body {
 .dochighlight {
   padding: rem-calc(10);
 
-  .html.hljs {
+  .hljs {
     padding: 0;
     line-height: 1.4;
+  }
+
+  .html.hljs {
     background: $color-background-dark;
+  }
+
+  .shell.hljs {
+    padding: rem-calc(10);
+    background: shade($color-background-dark, 2%);
   }
 
   &.-no-margin {
@@ -49,12 +57,30 @@ body {
   display: block;
   margin: 0 auto;
   width: 250px;
+  margin-bottom: rem-calc(20);
 }
 
 .dochead-actions {
-  display: none;
+  padding: rem-calc($gutter 0);
+  text-align: center;
 }
 
+.dochead-description {
+  text-align: center;
+  font-size: rem-calc(18);
+  font-weight: 300;
+}
+
+.dochead-install {
+  width: 250px;
+  margin: 0 auto;
+  border-radius: $radius;
+  border: 1px solid $color-border;
+
+  pre {
+    padding: 0;
+  }
+}
 
 /*--------------------
   Cards

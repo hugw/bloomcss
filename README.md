@@ -1,5 +1,24 @@
 ## bloom.css
 
+A minimalistic css framework to make your projects flourish.
+
+## Usage
+
+```
+# Bower
+$ bower install bloomcss
+
+# NPM
+$ npm install bloomcss
+```
+
+### Credits
+
+- Font Awesome (Icons)
+- Foundation sites (Grid and Visibility)
+- Normalize.css (Reset)
+- SemanticUI (Form loading state)
+
 ***
 
 The MIT License (MIT)
