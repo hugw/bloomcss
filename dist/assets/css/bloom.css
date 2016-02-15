@@ -578,37 +578,37 @@ select::-webkit-input-placeholder{color:#999}
 fieldset{border:1px solid #DDD;padding:.625rem 1.25rem 1.25rem;margin:0 0 1.25rem;border-radius:.1875rem}
 fieldset legend{background:#fff;padding:0 .3125rem;margin:0 0 0 -.3125rem;color:#999}
 button,input[type=reset],input[type=submit]{-webkit-appearance:none;-moz-appearance:none}
-.--hide{display:none!important}
-.--invisible{visibility:hidden}
-@media screen and (max-width:0em),screen and (min-width:30em){.--show-for-xsmall-only{display:none!important}
+.-hide{display:none!important}
+.-invisible{visibility:hidden}
+@media screen and (max-width:0em),screen and (min-width:30em){.-show-for-xsmall-only{display:none!important}
 }
-@media screen and (min-width:30em){.--hide-for-small{display:none!important}
+@media screen and (min-width:30em){.-hide-for-small{display:none!important}
 }
-@media screen and (max-width:29.9375em){.--hide-for-xsmall-only,.--show-for-small{display:none!important}
+@media screen and (max-width:29.9375em){.-hide-for-xsmall-only,.-show-for-small{display:none!important}
 }
-@media screen and (min-width:30em) and (max-width:47.9375em){.--hide-for-small-only{display:none!important}
+@media screen and (min-width:30em) and (max-width:47.9375em){.-hide-for-small-only{display:none!important}
 }
-@media screen and (max-width:29.9375em),screen and (min-width:48em){.--show-for-small-only{display:none!important}
+@media screen and (max-width:29.9375em),screen and (min-width:48em){.-show-for-small-only{display:none!important}
 }
-@media screen and (min-width:48em){.--hide-for-medium{display:none!important}
+@media screen and (min-width:48em){.-hide-for-medium{display:none!important}
 }
-@media screen and (max-width:47.9375em){.--show-for-medium{display:none!important}
+@media screen and (max-width:47.9375em){.-show-for-medium{display:none!important}
 }
-@media screen and (min-width:48em) and (max-width:59.9375em){.--hide-for-medium-only{display:none!important}
+@media screen and (min-width:48em) and (max-width:59.9375em){.-hide-for-medium-only{display:none!important}
 }
-@media screen and (max-width:47.9375em),screen and (min-width:60em){.--show-for-medium-only{display:none!important}
+@media screen and (max-width:47.9375em),screen and (min-width:60em){.-show-for-medium-only{display:none!important}
 }
-@media screen and (min-width:60em){.--hide-for-large{display:none!important}
+@media screen and (min-width:60em){.-hide-for-large{display:none!important}
 }
-@media screen and (max-width:59.9375em){.--show-for-large{display:none!important}
+@media screen and (max-width:59.9375em){.-show-for-large{display:none!important}
 }
-@media screen and (min-width:60em) and (max-width:74.9375em){.--hide-for-large-only{display:none!important}
+@media screen and (min-width:60em) and (max-width:74.9375em){.-hide-for-large-only{display:none!important}
 }
-@media screen and (max-width:59.9375em),screen and (min-width:75em){.--show-for-large-only{display:none!important}
+@media screen and (max-width:59.9375em),screen and (min-width:75em){.-show-for-large-only{display:none!important}
 }
-@media screen and (min-width:75em){.--hide-for-xlarge,.--hide-for-xlarge-only{display:none!important}
+@media screen and (min-width:75em){.-hide-for-xlarge,.-hide-for-xlarge-only{display:none!important}
 }
-@media screen and (max-width:74.9375em){.--show-for-xlarge,.--show-for-xlarge-only{display:none!important}
+@media screen and (max-width:74.9375em){.-show-for-xlarge,.-show-for-xlarge-only{display:none!important}
 }
 .form .form-actions{margin:1.25rem 0 0}
 .field{margin-bottom:1em}

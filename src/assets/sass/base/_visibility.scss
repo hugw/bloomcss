@@ -10,30 +10,30 @@
 
 @import '../vendor/foundation/components/visibility';
 
-.--hide {
+.-hide {
   display: none !important;
 }
 
-.--invisible {
+.-invisible {
   visibility: hidden;
 }
 
 @each $size in $breakpoint-classes {
   @if $size != -xsmall {
-    .--hide-for#{$size} {
+    .-hide-for#{$size} {
       @include hide-for($size);
     }
 
-    .--show-for#{$size} {
+    .-show-for#{$size} {
       @include show-for($size);
     }
   }
 
-  .--hide-for#{$size}-only {
+  .-hide-for#{$size}-only {
     @include hide-for-only($size);
   }
 
-  .--show-for#{$size}-only {
+  .-show-for#{$size}-only {
     @include show-for-only($size);
   }
 }
