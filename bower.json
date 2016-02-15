@@ -1,7 +1,7 @@
 {
   "name": "bloomcss",
   "version": "0.0.1",
-  "description": "",
+  "description": "A minimalistic css framework to make your projects flourish.",
   "license": "MIT",
   "author": "Hugo W <me@hugw.io>",
   "ignore": [
