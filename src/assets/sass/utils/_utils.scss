@@ -68,3 +68,27 @@
     }
   }
 }
+
+
+/**
+ * Field colored
+ */
+@mixin field-color($name: '-error', $color: $color-error) {
+  &.#{$name} {
+    #{text-inputs()},
+    textarea,
+    select {
+      border-color: tint($color, 60%);
+      color: shade($color, 20%);
+
+      &:focus {
+        background-color: tint($color, 95%);
+      }
+    }
+
+    > label,
+    > .field-help {
+      color: shade($color, 20%);
+    }
+  }
+}
