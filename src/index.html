@@ -44,6 +44,7 @@ $ npm install bloomcss
   <div class="grid-row">
     <div class="grid-column -large-6">
       <div class="doccards">
+
         <div class="doccard">
   <div class="doccard-title">
     Typography
@@ -364,6 +365,46 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 
         <div class="doccard">
   <div class="doccard-title">
+    Images
+  </div>
+
+  <div class="doccard-content panel">
+    <div class="grid-row -xsmall-up-2">
+      <div class="grid-column">
+        <figure>
+          <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
+          <figcaption>
+            A caption text.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<figure>
+  <img />
+  <figcaption>
+    A caption text.
+  </figcaption>
+</figure>
+</code></pre>
+      </div>
+
+      <div class="grid-column">
+        <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
+      </div>
+
+      <div class="grid-column">
+<pre class="dochighlight"><code class="html">
+<img />
+</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
     Buttons
   </div>
 
@@ -488,62 +529,62 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
     <div class="doccard-section">Groups</div>
 
     <p style="line-height: 2.5rem">
-      <span class="button-group -small -teal -icon">
+      <span class="buttons -small -teal -icon">
         <button class="button"><i class="icon -file"></i></button>
         <button class="button"><i class="icon -tasks"></i></button>
         <button class="button"><i class="icon -pencil"></i></button>
         <button class="button"><i class="icon -trash"></i></button>
       </span>
 
-      <span class="button-group">
+      <span class="buttons">
         <button class="button -small -blue -icon"><i class="icon -file"></i></button>
         <button class="button -small -blue -icon"><i class="icon -tasks"></i></button>
         <button class="button -small -blue -icon"><i class="icon -pencil"></i></button>
         <button class="button -small -blue -icon"><i class="icon -trash"></i></button>
       </span>
 
-      <span class="button-group -small -teal -icon">
+      <span class="buttons -small -teal -icon">
         <button class="button"><i class="icon -twitter"></i></button>
       </span>
 
-      <span class="button-group">
+      <span class="buttons">
         <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
       </span>
     </p>
 
     <p style="line-height: 2.5rem">
-      <span class="button-group -small -teal -icon -hollow">
+      <span class="buttons -small -teal -icon -hollow">
         <button class="button"><i class="icon -file"></i></button>
         <button class="button"><i class="icon -tasks"></i></button>
         <button class="button"><i class="icon -pencil"></i></button>
         <button class="button"><i class="icon -trash"></i></button>
       </span>
 
-      <span class="button-group">
+      <span class="buttons">
         <button class="button -small -blue -icon -hollow"><i class="icon -file"></i></button>
         <button class="button -small -blue -icon -hollow"><i class="icon -tasks"></i></button>
         <button class="button -small -blue -icon -hollow"><i class="icon -pencil"></i></button>
         <button class="button -small -blue -icon -hollow"><i class="icon -trash"></i></button>
       </span>
 
-      <span class="button-group -small -teal -icon -hollow">
+      <span class="buttons -small -teal -icon -hollow">
         <button class="button"><i class="icon -twitter"></i></button>
       </span>
 
-      <span class="button-group">
+      <span class="buttons">
         <button class="button -small -blue -icon -hollow"><i class="icon -facebook"></i></button>
       </span>
     </p>
 
 <pre class="dochighlight"><code class="html">
-<div class="button-group -small -teal -icon">
+<div class="buttons -small -teal -icon">
   <button class="button"><i class="icon -twitter"></i></button>
   ...
 </div>
 
 <!-- OR -->
 
-<div class="button-group">
+<div class="buttons">
   <button class="button -small -blue -icon"><i class="icon -facebook"></i></button>
   ...
 </div>
@@ -609,62 +650,25 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 
         <div class="doccard">
   <div class="doccard-title">
-    Images
+    Alerts
   </div>
 
   <div class="doccard-content panel">
-    <div class="grid-row -xsmall-up-2">
-      <div class="grid-column">
-        <figure>
-          <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
-          <figcaption>
-            A caption text.
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-column">
-<pre class="dochighlight"><code class="html">
-<figure>
-  <img />
-  <figcaption>
-    A caption text.
-  </figcaption>
-</figure>
-</code></pre>
-      </div>
-
-      <div class="grid-column">
-        <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/1055/Beautiful-Farm.jpg" alt="Farm">
-      </div>
-
-      <div class="grid-column">
-<pre class="dochighlight"><code class="html">
-<img />
-</code></pre>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div class="doccard">
-  <div class="doccard-title">
-    Panels
-  </div>
-
-  <div class="doccard-content panel">
-    <div class="panel">
-      <h3>Header A small description for this header</h3>
-
-      <p>Maecenas mi ante, pharetra ac odio sed, porta vehicula orci. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+    <div class="alerts">
+      <div class="alert">Incididunt ut labore et dolore magna</div>
+      <div class="alert -success">Incididunt ut labore et dolore magna</div>
+      <div class="alert -error">Incididunt ut labore et dolore magna</div>
+      <div class="alert -teal">Incididunt ut labore et dolore magna</div>
+      <div class="alert -orange">Incididunt ut labore et dolore magna</div>
     </div>
 
-    <br>
-
 <pre class="dochighlight"><code class="html">
-<div class="panel">
-  <h3>...</h3>
-  <p>...</p>
+<div class="alerts">
+  <div class="alert">...</div>
+  <div class="alert -success">...</div>
+  <div class="alert -error">...</div>
+  <div class="alert -teal">...</div>
+  <div class="alert -orange">...</div>
 </div>
 </code></pre>
   </div>
@@ -1134,6 +1138,29 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
 </div>
 </code></pre>
 
+  </div>
+</div>
+
+        <div class="doccard">
+  <div class="doccard-title">
+    Panels
+  </div>
+
+  <div class="doccard-content panel">
+    <div class="panel">
+      <h3>Header A small description for this header</h3>
+
+      <p>Maecenas mi ante, pharetra ac odio sed, porta vehicula orci. Mauris vel neque felis. Integer et bibendum ex. Mauris rhoncus a quam sed dapibus.</p>
+    </div>
+
+    <br>
+
+<pre class="dochighlight"><code class="html">
+<div class="panel">
+  <h3>...</h3>
+  <p>...</p>
+</div>
+</code></pre>
   </div>
 </div>
 

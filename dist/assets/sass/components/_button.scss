@@ -76,7 +76,7 @@ input[type="reset"] {
   Button groups
 ---------------------*/
 
-.button-group {
+.buttons {
   display: inline-block;
   font-size: 0;
   line-height: 1;
@@ -107,14 +107,14 @@ input[type="reset"] {
 }
 
 // Icon
-.button-group.-icon .button:not(.-icon) .icon {
+.buttons.-icon .button:not(.-icon) .icon {
   padding: 0;
   width: (18em / 14);
   text-align: center;
 }
 
 // Hollow
-.button-group.-hollow {
+.buttons.-hollow {
   .button:not(.-hollow) {
     position: relative;
     @include button-hollow();
@@ -131,7 +131,7 @@ input[type="reset"] {
   }
 }
 
-.button-group .button.-hollow {
+.buttons .button.-hollow {
   position: relative;
 
   &:not(:first-child) {
@@ -146,7 +146,7 @@ input[type="reset"] {
 }
 
 // Colors
-.button-group {
+.buttons {
   @include button-group-color();
   @include button-group-color('-secondary', $color-secondary);
   @include button-group-color('-success', $color-success);

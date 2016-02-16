@@ -1,0 +1,37 @@
+/**
+ * Alert component
+ *
+ * @copyright Copyright (c) 2016, hugw.io
+ * @author Hugo W - me@hugw.io
+ * @license MIT
+ */
+
+.alerts {
+  margin: rem-calc(0 0 $gutter 0);
+
+  > :last-child {
+    margin: 0;
+  }
+}
+
+.alert {
+  border: 1px solid $color-border;
+  padding: rem-calc(10 15);
+  color: $color-foreground-light;
+  background: $color-background-dark;
+  border-radius: $radius;
+  margin-bottom: rem-calc(5);
+
+  @include alert();
+  @include alert('-error', $color-error);
+  @include alert('-primary', $color-primary);
+  @include alert('-secondary', $color-secondary);
+  @include alert('-magenta', $magenta);
+  @include alert('-turquoise', $turquoise);
+  @include alert('-teal', $teal);
+  @include alert('-red', $red);
+  @include alert('-yellow', $yellow);
+  @include alert('-blue', $blue);
+  @include alert('-orange', $orange);
+  @include alert('-green', $green);
+}

@@ -619,17 +619,17 @@ fieldset legend{background:#fff;padding:0 .3125rem;margin:0 0 0 -.3125rem;color:
 .field.-success [type=text]:focus,.field.-success [type=password]:focus,.field.-success [type=date]:focus,.field.-success [type=datetime]:focus,.field.-success [type=datetime-local]:focus,.field.-success [type=month]:focus,.field.-success [type=week]:focus,.field.-success [type=email]:focus,.field.-success [type=number]:focus,.field.-success [type=search]:focus,.field.-success [type=tel]:focus,.field.-success [type=time]:focus,.field.-success [type=url]:focus,.field.-success [type=color]:focus,.field.-success select:focus,.field.-success textarea:focus{background-color:#f7fcf8}
 .field.-success>.field-help,.field.-success>label{color:#4e9757}
 .field .field-help{margin:.25rem 0 0;font-size:.8125rem;color:#999;display:block}
-.button-group,.icon{display:inline-block}
+.buttons,.icon{display:inline-block}
 [type=text].-small,[type=password].-small,[type=date].-small,[type=datetime].-small,[type=datetime-local].-small,[type=month].-small,[type=week].-small,[type=email].-small,[type=number].-small,[type=search].-small,[type=tel].-small,[type=time].-small,[type=url].-small,[type=color].-small,select.-small,textarea.-small{padding:.3125rem .625rem;font-size:.8125rem;height:1.875rem}
 [type=text].-large,[type=password].-large,[type=date].-large,[type=datetime].-large,[type=datetime-local].-large,[type=month].-large,[type=week].-large,[type=email].-large,[type=number].-large,[type=search].-large,[type=tel].-large,[type=time].-large,[type=url].-large,[type=color].-large,select.-large,textarea.-large{font-size:.9375rem;height:2.5rem}
 .form.-loading{position:relative;cursor:default;point-events:none}
 .form.-loading:after,.form.-loading:before{position:absolute;content:''}
 .form.-loading:before{top:0;left:0;background:rgba(255,255,255,.8);width:100%;height:100%;z-index:100}
 .form.-loading:after{top:50%;left:50%;margin:-1.5em 0 0 -1.5em;width:3em;height:3em;border-radius:500rem;border:.2rem solid rgba(0,0,0,.1);border-top-color:#03949a;z-index:101;-webkit-animation:formSpin .6s linear;-moz-animation:formSpin .6s linear;animation:formSpin .6s linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}
-.button-group .button.-hollow,.panel{position:relative}
-.button-group .button.-hollow:not(:first-child),.button-group.-hollow .button:not(.-hollow):not(:first-child){margin-left:-1px}
+.buttons .button.-hollow,.panel{position:relative}
+.buttons .button.-hollow:not(:first-child),.buttons.-hollow .button:not(.-hollow):not(:first-child){margin-left:-1px}
 .button.-icon .icon,.icon.-fixed-width{width:1.28571em;text-align:center}
-.button-group .button.-hollow:active,.button-group .button.-hollow:focus,.button-group .button.-hollow:hover,.button-group.-hollow .button:not(.-hollow):active,.button-group.-hollow .button:not(.-hollow):focus,.button-group.-hollow .button:not(.-hollow):hover{z-index:100}
+.buttons .button.-hollow:active,.buttons .button.-hollow:focus,.buttons .button.-hollow:hover,.buttons.-hollow .button:not(.-hollow):active,.buttons.-hollow .button:not(.-hollow):focus,.buttons.-hollow .button:not(.-hollow):hover{z-index:100}
 @-webkit-keyframes formSpin{0%{-webkit-transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg)}
 }
@@ -1367,123 +1367,138 @@ fieldset legend{background:#fff;padding:0 .3125rem;margin:0 0 0 -.3125rem;color:
 .button.-green.-hollow:hover{color:#44844c;border-color:#4e9757}
 .button.-green.-hollow:active,.button.-green.-hollow:focus{color:#3a7141;border-color:#44844c}
 .button.-green.-hollow:focus{outline:0}
-.button-group{font-size:0;line-height:1}
-.button-group .button{border-radius:0}
-.button-group .button:first-child{border-radius:.1875rem 0 0 .1875rem}
-.button-group .button:last-child{border-radius:0 .1875rem .1875rem 0}
-.button-group .button:only-child,.panel{border-radius:.1875rem}
-.button-group:not(.-xsmall):not(.-small):not(.-large) .button:not(.-xsmall):not(.-small):not(.-large){font-size:.875rem}
-.button-group.-xsmall .button{height:1.5625rem;line-height:1.4375rem;font-size:.8125rem;padding:0 .625rem}
-.button-group.-small .button{height:1.875rem;line-height:1.75rem;font-size:.8125rem}
-.button-group.-large .button{height:2.5rem;line-height:2.375rem;font-size:.9375rem;padding:0 1.25rem}
-.button-group.-icon .button:not(.-icon) .icon{padding:0;width:1.28571em;text-align:center}
-.button-group.-hollow .button:not(.-hollow){position:relative;background:0 0!important;color:#8a8a8a;border:1px solid #999}
-.button-group.-hollow .button:not(.-hollow):hover{color:#6b6b6b;border-color:#7a7a7a}
-.button-group.-hollow .button:not(.-hollow):focus{outline:0;color:#5c5c5c;border-color:#6b6b6b}
-.button-group.-hollow .button:not(.-hollow):active{color:#5c5c5c;border-color:#6b6b6b}
-.button-group.-primary .button{background:#03949a;color:#fff}
-.button-group.-primary .button:hover{color:#fff;background:#037e83}
-.button-group.-primary .button:focus{color:#fff;outline:0;background:#02767b}
-.button-group.-primary .button:active{background:#02767b}
-.button-group.-primary.-hollow .button{background:0 0!important;color:#03858b;border:1px solid #03949a}
-.button-group.-primary.-hollow .button:hover{color:#02686c;border-color:#02767b}
-.button-group.-primary.-hollow .button:focus{outline:0;color:#02595c;border-color:#02686c}
-.button-group.-primary.-hollow .button:active{color:#02595c;border-color:#02686c}
-.button-group.-secondary .button{background:#1abc9c;color:#fff}
-.button-group.-secondary .button:hover{color:#fff;background:#16a085}
-.button-group.-secondary .button:focus{color:#fff;outline:0;background:#15967d}
-.button-group.-secondary .button:active{background:#15967d}
-.button-group.-secondary.-hollow .button{background:0 0!important;color:#17a98c;border:1px solid #1abc9c}
-.button-group.-secondary.-hollow .button:hover{color:#12846d;border-color:#15967d}
-.button-group.-secondary.-hollow .button:focus{outline:0;color:#10715e;border-color:#12846d}
-.button-group.-secondary.-hollow .button:active{color:#10715e;border-color:#12846d}
-.button-group.-success .button{background:#61bd6d;color:#fff}
-.button-group.-success .button:hover{color:#fff;background:#52a15d}
-.button-group.-success .button:focus{color:#fff;outline:0;background:#4e9757}
-.button-group.-success .button:active{background:#4e9757}
-.button-group.-success.-hollow .button{background:0 0!important;color:#57aa62;border:1px solid #61bd6d}
-.button-group.-success.-hollow .button:hover{color:#44844c;border-color:#4e9757}
-.button-group.-success.-hollow .button:focus{outline:0;color:#3a7141;border-color:#44844c}
-.button-group.-success.-hollow .button:active{color:#3a7141;border-color:#44844c}
-.button-group.-error .button{background:#e85765;color:#fff}
-.button-group.-error .button:hover{color:#fff;background:#c54a56}
-.button-group.-error .button:focus{color:#fff;outline:0;background:#ba4651}
-.button-group.-error .button:active{background:#ba4651}
-.button-group.-error.-hollow .button{background:0 0!important;color:#d14e5b;border:1px solid #e85765}
-.button-group.-error.-hollow .button:hover{color:#a23d47;border-color:#ba4651}
-.button-group.-error.-hollow .button:focus{outline:0;color:#8b343d;border-color:#a23d47}
-.button-group.-error.-hollow .button:active{color:#8b343d;border-color:#a23d47}
-.button-group.-magenta .button{background:#e85765;color:#fff}
-.button-group.-magenta .button:hover{color:#fff;background:#c54a56}
-.button-group.-magenta .button:focus{color:#fff;outline:0;background:#ba4651}
-.button-group.-magenta .button:active{background:#ba4651}
-.button-group.-magenta.-hollow .button{background:0 0!important;color:#d14e5b;border:1px solid #e85765}
-.button-group.-magenta.-hollow .button:hover{color:#a23d47;border-color:#ba4651}
-.button-group.-magenta.-hollow .button:focus{outline:0;color:#8b343d;border-color:#a23d47}
-.button-group.-magenta.-hollow .button:active{color:#8b343d;border-color:#a23d47}
-.button-group.-turquoise .button{background:#1abc9c;color:#fff}
-.button-group.-turquoise .button:hover{color:#fff;background:#16a085}
-.button-group.-turquoise .button:focus{color:#fff;outline:0;background:#15967d}
-.button-group.-turquoise .button:active{background:#15967d}
-.button-group.-turquoise.-hollow .button{background:0 0!important;color:#17a98c;border:1px solid #1abc9c}
-.button-group.-turquoise.-hollow .button:hover{color:#12846d;border-color:#15967d}
-.button-group.-turquoise.-hollow .button:focus{outline:0;color:#10715e;border-color:#12846d}
-.button-group.-turquoise.-hollow .button:active{color:#10715e;border-color:#12846d}
-.button-group.-teal .button{background:#03949a;color:#fff}
-.button-group.-teal .button:hover{color:#fff;background:#037e83}
-.button-group.-teal .button:focus{color:#fff;outline:0;background:#02767b}
-.button-group.-teal .button:active{background:#02767b}
-.button-group.-teal.-hollow .button{background:0 0!important;color:#03858b;border:1px solid #03949a}
-.button-group.-teal.-hollow .button:hover{color:#02686c;border-color:#02767b}
-.button-group.-teal.-hollow .button:focus{outline:0;color:#02595c;border-color:#02686c}
-.button-group.-teal.-hollow .button:active{color:#02595c;border-color:#02686c}
-.button-group.-red .button{background:#D64541;color:#fff}
-.button-group.-red .button:hover{color:#fff;background:#b63b37}
-.button-group.-red .button:focus{color:#fff;outline:0;background:#ab3734}
-.button-group.-red .button:active{background:#ab3734}
-.button-group.-red.-hollow .button{background:0 0!important;color:#c13e3b;border:1px solid #D64541}
-.button-group.-red.-hollow .button:hover{color:#96302e;border-color:#ab3734}
-.button-group.-red.-hollow .button:focus{outline:0;color:#802927;border-color:#96302e}
-.button-group.-red.-hollow .button:active{color:#802927;border-color:#96302e}
-.button-group.-yellow .button{background:#e8c34d;color:#fff}
-.button-group.-yellow .button:hover{color:#fff;background:#c5a641}
-.button-group.-yellow .button:focus{color:#fff;outline:0;background:#ba9c3e}
-.button-group.-yellow .button:active{background:#ba9c3e}
-.button-group.-yellow.-hollow .button{background:0 0!important;color:#d1b045;border:1px solid #e8c34d}
-.button-group.-yellow.-hollow .button:hover{color:#a28936;border-color:#ba9c3e}
-.button-group.-yellow.-hollow .button:focus{outline:0;color:#8b752e;border-color:#a28936}
-.button-group.-yellow.-hollow .button:active{color:#8b752e;border-color:#a28936}
-.button-group.-blue .button{background:#2da8cd;color:#fff}
-.button-group.-blue .button:hover{color:#fff;background:#268fae}
-.button-group.-blue .button:focus{color:#fff;outline:0;background:#2486a4}
-.button-group.-blue .button:active{background:#2486a4}
-.button-group.-blue.-hollow .button{background:0 0!important;color:#2997b9;border:1px solid #2da8cd}
-.button-group.-blue.-hollow .button:hover{color:#207690;border-color:#2486a4}
-.button-group.-blue.-hollow .button:focus{outline:0;color:#1b657b;border-color:#207690}
-.button-group.-blue.-hollow .button:active{color:#1b657b;border-color:#207690}
-.button-group.-orange .button{background:#f38035;color:#fff}
-.button-group.-orange .button:hover{color:#fff;background:#cf6d2d}
-.button-group.-orange .button:focus{color:#fff;outline:0;background:#c2662a}
-.button-group.-orange .button:active{background:#c2662a}
-.button-group.-orange.-hollow .button{background:0 0!important;color:#db7330;border:1px solid #f38035}
-.button-group.-orange.-hollow .button:hover{color:#aa5a25;border-color:#c2662a}
-.button-group.-orange.-hollow .button:focus{outline:0;color:#924d20;border-color:#aa5a25}
-.button-group.-orange.-hollow .button:active{color:#924d20;border-color:#aa5a25}
-.button-group.-green .button{background:#61bd6d;color:#fff}
-.button-group.-green .button:hover{color:#fff;background:#52a15d}
-.button-group.-green .button:focus{color:#fff;outline:0;background:#4e9757}
-.button-group.-green .button:active{background:#4e9757}
-.button-group.-green.-hollow .button{background:0 0!important;color:#57aa62;border:1px solid #61bd6d}
-.button-group.-green.-hollow .button:hover{color:#44844c;border-color:#4e9757}
-.button-group.-green.-hollow .button:focus{outline:0;color:#3a7141;border-color:#44844c}
-.button-group.-green.-hollow .button:active{color:#3a7141;border-color:#44844c}
-.panel{background:#fff;box-shadow:0 1px 1px 0 rgba(0,0,0,.1);padding:1.25rem;border:1px solid #DDD}
+.buttons{font-size:0;line-height:1}
+.buttons .button{border-radius:0}
+.buttons .button:first-child{border-radius:.1875rem 0 0 .1875rem}
+.buttons .button:last-child{border-radius:0 .1875rem .1875rem 0}
+.buttons .button:only-child{border-radius:.1875rem}
+.buttons:not(.-xsmall):not(.-small):not(.-large) .button:not(.-xsmall):not(.-small):not(.-large){font-size:.875rem}
+.buttons.-xsmall .button{height:1.5625rem;line-height:1.4375rem;font-size:.8125rem;padding:0 .625rem}
+.buttons.-small .button{height:1.875rem;line-height:1.75rem;font-size:.8125rem}
+.buttons.-large .button{height:2.5rem;line-height:2.375rem;font-size:.9375rem;padding:0 1.25rem}
+.buttons.-icon .button:not(.-icon) .icon{padding:0;width:1.28571em;text-align:center}
+.buttons.-hollow .button:not(.-hollow){position:relative;background:0 0!important;color:#8a8a8a;border:1px solid #999}
+.buttons.-hollow .button:not(.-hollow):hover{color:#6b6b6b;border-color:#7a7a7a}
+.buttons.-hollow .button:not(.-hollow):focus{outline:0;color:#5c5c5c;border-color:#6b6b6b}
+.buttons.-hollow .button:not(.-hollow):active{color:#5c5c5c;border-color:#6b6b6b}
+.buttons.-primary .button{background:#03949a;color:#fff}
+.buttons.-primary .button:hover{color:#fff;background:#037e83}
+.buttons.-primary .button:focus{color:#fff;outline:0;background:#02767b}
+.buttons.-primary .button:active{background:#02767b}
+.buttons.-primary.-hollow .button{background:0 0!important;color:#03858b;border:1px solid #03949a}
+.buttons.-primary.-hollow .button:hover{color:#02686c;border-color:#02767b}
+.buttons.-primary.-hollow .button:focus{outline:0;color:#02595c;border-color:#02686c}
+.buttons.-primary.-hollow .button:active{color:#02595c;border-color:#02686c}
+.buttons.-secondary .button{background:#1abc9c;color:#fff}
+.buttons.-secondary .button:hover{color:#fff;background:#16a085}
+.buttons.-secondary .button:focus{color:#fff;outline:0;background:#15967d}
+.buttons.-secondary .button:active{background:#15967d}
+.buttons.-secondary.-hollow .button{background:0 0!important;color:#17a98c;border:1px solid #1abc9c}
+.buttons.-secondary.-hollow .button:hover{color:#12846d;border-color:#15967d}
+.buttons.-secondary.-hollow .button:focus{outline:0;color:#10715e;border-color:#12846d}
+.buttons.-secondary.-hollow .button:active{color:#10715e;border-color:#12846d}
+.buttons.-success .button{background:#61bd6d;color:#fff}
+.buttons.-success .button:hover{color:#fff;background:#52a15d}
+.buttons.-success .button:focus{color:#fff;outline:0;background:#4e9757}
+.buttons.-success .button:active{background:#4e9757}
+.buttons.-success.-hollow .button{background:0 0!important;color:#57aa62;border:1px solid #61bd6d}
+.buttons.-success.-hollow .button:hover{color:#44844c;border-color:#4e9757}
+.buttons.-success.-hollow .button:focus{outline:0;color:#3a7141;border-color:#44844c}
+.buttons.-success.-hollow .button:active{color:#3a7141;border-color:#44844c}
+.buttons.-error .button{background:#e85765;color:#fff}
+.buttons.-error .button:hover{color:#fff;background:#c54a56}
+.buttons.-error .button:focus{color:#fff;outline:0;background:#ba4651}
+.buttons.-error .button:active{background:#ba4651}
+.buttons.-error.-hollow .button{background:0 0!important;color:#d14e5b;border:1px solid #e85765}
+.buttons.-error.-hollow .button:hover{color:#a23d47;border-color:#ba4651}
+.buttons.-error.-hollow .button:focus{outline:0;color:#8b343d;border-color:#a23d47}
+.buttons.-error.-hollow .button:active{color:#8b343d;border-color:#a23d47}
+.buttons.-magenta .button{background:#e85765;color:#fff}
+.buttons.-magenta .button:hover{color:#fff;background:#c54a56}
+.buttons.-magenta .button:focus{color:#fff;outline:0;background:#ba4651}
+.buttons.-magenta .button:active{background:#ba4651}
+.buttons.-magenta.-hollow .button{background:0 0!important;color:#d14e5b;border:1px solid #e85765}
+.buttons.-magenta.-hollow .button:hover{color:#a23d47;border-color:#ba4651}
+.buttons.-magenta.-hollow .button:focus{outline:0;color:#8b343d;border-color:#a23d47}
+.buttons.-magenta.-hollow .button:active{color:#8b343d;border-color:#a23d47}
+.buttons.-turquoise .button{background:#1abc9c;color:#fff}
+.buttons.-turquoise .button:hover{color:#fff;background:#16a085}
+.buttons.-turquoise .button:focus{color:#fff;outline:0;background:#15967d}
+.buttons.-turquoise .button:active{background:#15967d}
+.buttons.-turquoise.-hollow .button{background:0 0!important;color:#17a98c;border:1px solid #1abc9c}
+.buttons.-turquoise.-hollow .button:hover{color:#12846d;border-color:#15967d}
+.buttons.-turquoise.-hollow .button:focus{outline:0;color:#10715e;border-color:#12846d}
+.buttons.-turquoise.-hollow .button:active{color:#10715e;border-color:#12846d}
+.buttons.-teal .button{background:#03949a;color:#fff}
+.buttons.-teal .button:hover{color:#fff;background:#037e83}
+.buttons.-teal .button:focus{color:#fff;outline:0;background:#02767b}
+.buttons.-teal .button:active{background:#02767b}
+.buttons.-teal.-hollow .button{background:0 0!important;color:#03858b;border:1px solid #03949a}
+.buttons.-teal.-hollow .button:hover{color:#02686c;border-color:#02767b}
+.buttons.-teal.-hollow .button:focus{outline:0;color:#02595c;border-color:#02686c}
+.buttons.-teal.-hollow .button:active{color:#02595c;border-color:#02686c}
+.buttons.-red .button{background:#D64541;color:#fff}
+.buttons.-red .button:hover{color:#fff;background:#b63b37}
+.buttons.-red .button:focus{color:#fff;outline:0;background:#ab3734}
+.buttons.-red .button:active{background:#ab3734}
+.buttons.-red.-hollow .button{background:0 0!important;color:#c13e3b;border:1px solid #D64541}
+.buttons.-red.-hollow .button:hover{color:#96302e;border-color:#ab3734}
+.buttons.-red.-hollow .button:focus{outline:0;color:#802927;border-color:#96302e}
+.buttons.-red.-hollow .button:active{color:#802927;border-color:#96302e}
+.buttons.-yellow .button{background:#e8c34d;color:#fff}
+.buttons.-yellow .button:hover{color:#fff;background:#c5a641}
+.buttons.-yellow .button:focus{color:#fff;outline:0;background:#ba9c3e}
+.buttons.-yellow .button:active{background:#ba9c3e}
+.buttons.-yellow.-hollow .button{background:0 0!important;color:#d1b045;border:1px solid #e8c34d}
+.buttons.-yellow.-hollow .button:hover{color:#a28936;border-color:#ba9c3e}
+.buttons.-yellow.-hollow .button:focus{outline:0;color:#8b752e;border-color:#a28936}
+.buttons.-yellow.-hollow .button:active{color:#8b752e;border-color:#a28936}
+.buttons.-blue .button{background:#2da8cd;color:#fff}
+.buttons.-blue .button:hover{color:#fff;background:#268fae}
+.buttons.-blue .button:focus{color:#fff;outline:0;background:#2486a4}
+.buttons.-blue .button:active{background:#2486a4}
+.buttons.-blue.-hollow .button{background:0 0!important;color:#2997b9;border:1px solid #2da8cd}
+.buttons.-blue.-hollow .button:hover{color:#207690;border-color:#2486a4}
+.buttons.-blue.-hollow .button:focus{outline:0;color:#1b657b;border-color:#207690}
+.buttons.-blue.-hollow .button:active{color:#1b657b;border-color:#207690}
+.buttons.-orange .button{background:#f38035;color:#fff}
+.buttons.-orange .button:hover{color:#fff;background:#cf6d2d}
+.buttons.-orange .button:focus{color:#fff;outline:0;background:#c2662a}
+.buttons.-orange .button:active{background:#c2662a}
+.buttons.-orange.-hollow .button{background:0 0!important;color:#db7330;border:1px solid #f38035}
+.buttons.-orange.-hollow .button:hover{color:#aa5a25;border-color:#c2662a}
+.buttons.-orange.-hollow .button:focus{outline:0;color:#924d20;border-color:#aa5a25}
+.buttons.-orange.-hollow .button:active{color:#924d20;border-color:#aa5a25}
+.buttons.-green .button{background:#61bd6d;color:#fff}
+.buttons.-green .button:hover{color:#fff;background:#52a15d}
+.buttons.-green .button:focus{color:#fff;outline:0;background:#4e9757}
+.buttons.-green .button:active{background:#4e9757}
+.buttons.-green.-hollow .button{background:0 0!important;color:#57aa62;border:1px solid #61bd6d}
+.buttons.-green.-hollow .button:hover{color:#44844c;border-color:#4e9757}
+.buttons.-green.-hollow .button:focus{outline:0;color:#3a7141;border-color:#44844c}
+.buttons.-green.-hollow .button:active{color:#3a7141;border-color:#44844c}
+.panel{background:#fff;box-shadow:0 1px 1px 0 rgba(0,0,0,.1);padding:1.25rem;border-radius:.1875rem;border:1px solid #DDD}
 .panel>:first-child{margin-top:0}
 .panel>:last-child{margin-bottom:0}
 .panel:after{content:'';position:absolute;bottom:0;left:0;border-top:1px solid #DDD;background:rgba(0,0,0,.02);width:100%;height:.1875rem;visibility:visible}
-.dochighlight .html.hljs,body{background:#F9F9F9}
 @media screen and (min-width:75em){.panel{padding:1.875rem}
 }
+.alerts{margin:0 0 1.25rem}
+.alerts>:last-child{margin:0}
+.alert{border:1px solid #DDD;padding:.625rem .9375rem;color:#999;background:#F9F9F9;border-radius:.1875rem;margin-bottom:.3125rem}
+.alert.-success{background-color:#fafdfb;border-color:#d8efdb;color:#4e9757}
+.alert.-error{background-color:#fefafa;border-color:#f9d5d9;color:#ba4651}
+.alert.-primary{background-color:#f7fcfc;border-color:#c0e4e6;color:#02767b}
+.alert.-secondary{background-color:#f8fdfc;border-color:#c6eee6;color:#15967d}
+.alert.-magenta{background-color:#fefafa;border-color:#f9d5d9;color:#ba4651}
+.alert.-turquoise{background-color:#f8fdfc;border-color:#c6eee6;color:#15967d}
+.alert.-teal{background-color:#f7fcfc;border-color:#c0e4e6;color:#02767b}
+.alert.-red{background-color:#fef9f9;border-color:#f5d1d0;color:#ab3734}
+.alert.-yellow{background-color:#fefdfa;border-color:#f9f0d3;color:#ba9c3e}
+.alert.-blue{background-color:#f9fcfe;border-color:#cbe9f3;color:#2486a4}
+.alert.-orange{background-color:#fffbf9;border-color:#fcdfcd;color:#c2662a}
+.alert.-green{background-color:#fafdfb;border-color:#d8efdb;color:#4e9757}
+.dochighlight .html.hljs,body{background:#F9F9F9}
 .dochighlight{padding:.625rem}
 .dochighlight .hljs{padding:0;line-height:1.4}
 .dochighlight .shell.hljs{padding:.625rem;background:#f4f4f4}
