@@ -11,7 +11,9 @@
     "src",
     "gulp",
     "gulpfile.js",
-    "package.json"
+    "package.json",
+    "server.js",
+    "Procfile"
   ],
   "devDependencies": {
     "jquery": "~2.1.0",

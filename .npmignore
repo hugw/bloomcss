@@ -4,3 +4,5 @@ src
 gulp
 gulpfile.js
 bower.json
+server.js
+Procfile
