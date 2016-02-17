@@ -1,6 +1,6 @@
 {
   "name": "bloomcss",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A minimalistic css framework to let your projects flourish.",
   "license": "MIT",
   "author": "Hugo W <me@hugw.io>",
@@ -13,7 +13,8 @@
     "gulpfile.js",
     "package.json",
     "server.js",
-    "Procfile"
+    "Procfile",
+    "CHANGELOG.md"
   ],
   "devDependencies": {
     "jquery": "~2.1.0",
