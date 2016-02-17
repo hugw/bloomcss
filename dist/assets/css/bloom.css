@@ -1480,6 +1480,7 @@ button,input[type=reset],input[type=submit]{-webkit-appearance:none;-moz-appeara
 .panel{background:#fff;box-shadow:0 1px 1px 0 rgba(0,0,0,.1);padding:1.25rem;border-radius:.1875rem;border:1px solid #DDD}
 .panel>:first-child{margin-top:0}
 .panel>:last-child{margin-bottom:0}
+.panel>:only-child{margin-top:0;margin-bottom:0}
 .panel:after{content:'';position:absolute;bottom:0;left:0;border-top:1px solid #DDD;background:rgba(0,0,0,.02);width:100%;height:.1875rem;visibility:visible}
 @media screen and (min-width:75em){.panel{padding:1.875rem}
 }

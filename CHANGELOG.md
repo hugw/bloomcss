@@ -1,3 +1,7 @@
+### 0.3.1
+
+- Add only-child prop to panels
+
 ### 0.3.0
 
 - Add alerts
