@@ -12,6 +12,30 @@ $ bower install bloomcss
 $ npm install bloomcss
 ```
 
+#### Usage with node-sass
+
+In your sass file:
+
+```css
+@import "bloomcss";
+```
+
+Then in your node-sass configuration:
+
+```js
+var sass = require('node-sass');
+var bloomcss = require('bloomcss');
+
+sass.render({
+  file: scss_filename,
+  includePaths: bloomcss.includePaths,
+  [, options...]
+}, function(err, result) { /*...*/ });
+
+```
+
+See [node-sass/includePaths](https://github.com/sass/node-sass#includepaths) for better information
+
 ### Credits
 
 - Font Awesome (Icons)
