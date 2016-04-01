@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "http://hugw.io/bloomcss/",
   "repository": "https://github.com/hugw/bloomcss",
-  "main": "dist/assets/css/bloom.min.css",
+  "main": "index.js",
   "engines": {
     "node": "^5.0.0"
   },
