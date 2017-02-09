@@ -1,15 +1,12 @@
 {
   "name": "bloomcss",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": "Hugo W <me@hugw.io>",
   "description": "A minimalistic css framework to let your projects flourish.",
   "license": "MIT",
   "homepage": "http://hugw.io/bloomcss/",
   "repository": "https://github.com/hugw/bloomcss",
   "main": "dist/assets/css/bloom.min.css",
-  "engines": {
-    "node": "^5.0.0"
-  },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-preset-es2015": "^6.3.13",
